@@ -9,14 +9,14 @@ const config: Config = {
    favicon: 'img/favicon.gif',
 
   // Set the production url of your site here
-  url: 'https://vonmecheln.github.io/',
+  url: 'https://sergiocastro9.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/ifpisrn-horarios/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'vonmecheln', // Usually your GitHub org/user name.
+  organizationName: 'sergiocastro9', // Usually your GitHub org/user name.
   projectName: 'ifpisrn-horarios', // Usually your repo name.
   trailingSlash: false,
 
