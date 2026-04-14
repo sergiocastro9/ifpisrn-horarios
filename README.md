@@ -7,6 +7,7 @@ Site para divulgação dos horários (turmas, professores e salas) do IFPI – C
 O site é publicado via GitHub Pages:
 
 - https://sergiocastro9.github.io/ifpisrn-horarios/
+- https://profsergiocastro.github.io/ifpisrn-horarios/
 
 ## Desenvolvimento
 
@@ -33,4 +34,3 @@ npm start
 ```bash
 npm run generate:fet:csv -- "C:\Users\sergi\fet-results\csv\IFPISRN20261VersaoFinal\IFPISRN20261VersaoFinal_timetable.csv"
 ```
-
