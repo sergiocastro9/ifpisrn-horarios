@@ -14,6 +14,7 @@ import { Gear, X, Check, Camera } from 'phosphor-react'
 import { RadioItem } from '../RadioItem'
 import { GridContext } from '../Grid'
 import { TimetableViewType, TimetableColorType} from '@site/src/reducers/settings/reducer'
+import { trackEvent } from '@site/src/utils/analytics'
 
 export interface ModalSettingsProps {
   downloadScreenshot: () => any
@@ -25,14 +26,17 @@ export function ModalSettings({ downloadScreenshot }: ModalSettingsProps) {
 
   function handleChangeMenu() {
     modifyMenu(!isMenuFixed)
+    trackEvent('menu_fixed_toggle', { enabled: !isMenuFixed })
   }
 
   function handleChangeTimetableView(newView: TimetableViewType) {
     reduceGrid(newView)
+    trackEvent('timetable_view_change', { view: newView })
   }
 
   function handleChangeTimetableColor(newColor: TimetableColorType) {
     colorizeGrid(newColor)
+    trackEvent('timetable_color_change', { color: newColor })
   }
 
   return (
@@ -128,7 +132,12 @@ export function ModalSettings({ downloadScreenshot }: ModalSettingsProps) {
               Caso queira ter o horário como uma imagem
             </Dialog.Description>
             <ScreenshotButton
-              onClick={downloadScreenshot}
+              onClick={() => {
+                trackEvent('timetable_screenshot_download', {
+                  source: 'settings_modal',
+                })
+                downloadScreenshot()
+              }}
               title="Download do horário como imagem"
             >
               <Camera size={25} />

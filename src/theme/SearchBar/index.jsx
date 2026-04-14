@@ -6,6 +6,7 @@ import { usePluginData } from '@docusaurus/useGlobalData'
 import useIsBrowser from '@docusaurus/useIsBrowser'
 
 import { HighlightSearchResults } from 'docusaurus-lunr-search/src/theme/SearchBar/HighlightSearchResults'
+import { trackEvent } from '@site/src/utils/analytics'
 
 function joinUrl(base, fileName) {
   const b = String(base ?? '')
@@ -84,6 +85,12 @@ const Search = (props) => {
 
         history.push(url, {
           highlightState: { wordToHighlight },
+        })
+
+        trackEvent('search_result_open', {
+          url,
+          title: suggestion.title || '',
+          subcategory: suggestion.subcategory || '',
         })
       },
       maxHits: options.maxHits,

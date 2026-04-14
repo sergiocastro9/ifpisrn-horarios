@@ -6,6 +6,7 @@ import React from 'react'
 import { ThemeProvider } from 'styled-components'
 import { createGridArea } from '../../utils/create-grid-area'
 import Link from '@docusaurus/Link'
+import { trackEvent } from '@site/src/utils/analytics'
 
 export function Item(props: { timetable: Classes }) {
   const colorItem = (props.timetable.color ?? '0,0,0').split(',')
@@ -23,8 +24,21 @@ export function Item(props: { timetable: Classes }) {
           {props.timetable.subject}
         </strong>
         {props.timetable.links?.map((a) => {
+          const entity =
+            a.url.includes('/docs/professor/') ? 'professor' : a.url.includes('/docs/turma/') ? 'turma' : 'sala'
           return (
-            <Link title={a.title} to={a.url} key={a.url}>
+            <Link
+              title={a.title}
+              to={a.url}
+              key={a.url}
+              onClick={() =>
+                trackEvent('timetable_related_link_click', {
+                  entity,
+                  title: a.title,
+                  url: a.url,
+                })
+              }
+            >
               {a.title}
             </Link>
           )
