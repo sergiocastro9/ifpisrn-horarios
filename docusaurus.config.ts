@@ -103,8 +103,14 @@ const config: Config = {
     [
       '@docusaurus/plugin-google-gtag',
       {
-        trackingID: 'GTM-MQ8B67G4',
+        trackingID: 'G-P5VW49XG7M',
         anonymizeIP: false,
+      },
+    ],
+    [
+      '@docusaurus/plugin-google-tag-manager',
+      {
+        containerId: 'GTM-MQ8B67G4',
       },
     ],
     [
@@ -118,4 +124,3 @@ const config: Config = {
 };
 
 export default config;
-
