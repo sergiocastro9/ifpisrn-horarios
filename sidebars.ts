@@ -2,8 +2,8 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
 /**
  * Creating a sidebar enables you to:
- - create an ordered group of docs
- - render a sidebar for each doc of that group
+ * - create an ordered group of docs
+ * - render a sidebar for each doc of that group
  * - provide next/previous navigation
  *
  * The sidebars can be generated from the filesystem, or explicitly defined here.
@@ -61,6 +61,12 @@ const sidebars: SidebarsConfig = {
       className: 'campusInfoItem campusInfoItem--administracao',
     },
     {
+      type: 'doc',
+      id: 'campus/setor-de-saude',
+      label: 'Setor de Saúde',
+      className: 'campusInfoItem campusInfoItem--saude',
+    },
+    {
       type: 'category',
       label: 'Cursos',
       collapsible: true,
@@ -68,36 +74,48 @@ const sidebars: SidebarsConfig = {
       className: 'campusInfoItem campusInfoItem--cursos',
       items: [
         {
-          type: 'html',
-          value: '<div class="sidebarSectionHeading">TÉCNICOS</div>',
-          defaultStyle: true,
+          type: 'category',
+          label: 'Técnico',
+          collapsible: true,
+          collapsed: true,
+          className: 'campusCourseType campusCourseType--tecnico',
+          items: [
+            {type: 'doc', id: 'cursos/tecnico-administracao-integrado', label: 'Administração (Integrado)'},
+            {type: 'doc', id: 'cursos/tecnico-eventos-integrado', label: 'Eventos (Integrado)'},
+            {type: 'doc', id: 'cursos/tecnico-informatica-integrado', label: 'Informática (Integrado)'},
+            {type: 'doc', id: 'cursos/tecnico-administracao-subsequente', label: 'Administração (Subsequente)'},
+            {type: 'doc', id: 'cursos/tecnico-gastronomia-subsequente', label: 'Gastronomia (Subsequente)'},
+            {type: 'doc', id: 'cursos/tecnico-guia-de-turismo-subsequente', label: 'Guia de Turismo (Subsequente)'},
+            {
+              type: 'doc',
+              id: 'cursos/tecnico-servico-de-restaurante-e-bar',
+              label: 'Serviço de Restaurante e Bar (Subsequente)',
+            },
+            {type: 'doc', id: 'cursos/tecnico-gastronomia-proeja', label: 'Gastronomia (PROEJA)'},
+          ],
         },
-        {type: 'doc', id: 'cursos/tecnico-administracao-integrado', label: 'Administração (Integrado)'},
-        {type: 'doc', id: 'cursos/tecnico-eventos-integrado', label: 'Eventos (Integrado)'},
-        {type: 'doc', id: 'cursos/tecnico-informatica-integrado', label: 'Informática (Integrado)'},
-        {type: 'doc', id: 'cursos/tecnico-administracao-subsequente', label: 'Administração (Subsequente)'},
-        {type: 'doc', id: 'cursos/tecnico-gastronomia-subsequente', label: 'Gastronomia (Subsequente)'},
-        {type: 'doc', id: 'cursos/tecnico-guia-de-turismo-subsequente', label: 'Guia de Turismo (Subsequente)'},
         {
-          type: 'doc',
-          id: 'cursos/tecnico-servico-de-restaurante-e-bar',
-          label: 'Serviço de Restaurante e Bar (Subsequente)',
+          type: 'category',
+          label: 'Licenciatura',
+          collapsible: true,
+          collapsed: true,
+          className: 'campusCourseType campusCourseType--licenciatura',
+          items: [
+            {type: 'doc', id: 'cursos/licenciatura-fisica', label: 'Licenciatura em Física'},
+            {type: 'doc', id: 'cursos/licenciatura-matematica', label: 'Licenciatura em Matemática'},
+          ],
         },
-        {type: 'doc', id: 'cursos/tecnico-gastronomia-proeja', label: 'Gastronomia (PROEJA)'},
         {
-          type: 'html',
-          value: '<div class="sidebarSectionHeading">LICENCIATURA</div>',
-          defaultStyle: true,
+          type: 'category',
+          label: 'Tecnologia',
+          collapsible: true,
+          collapsed: true,
+          className: 'campusCourseType campusCourseType--tecnologia',
+          items: [
+            {type: 'doc', id: 'cursos/tecnologia-gastronomia', label: 'Gastronomia'},
+            {type: 'doc', id: 'cursos/tecnologia-sistemas-para-internet', label: 'Sistemas para Internet'},
+          ],
         },
-        {type: 'doc', id: 'cursos/licenciatura-fisica', label: 'Licenciatura em Física'},
-        {type: 'doc', id: 'cursos/licenciatura-matematica', label: 'Licenciatura em Matemática'},
-        {
-          type: 'html',
-          value: '<div class="sidebarSectionHeading">TECNOLOGIA</div>',
-          defaultStyle: true,
-        },
-        {type: 'doc', id: 'cursos/tecnologia-gastronomia', label: 'Gastronomia'},
-        {type: 'doc', id: 'cursos/tecnologia-sistemas-para-internet', label: 'Sistemas para Internet'},
       ],
     },
     {

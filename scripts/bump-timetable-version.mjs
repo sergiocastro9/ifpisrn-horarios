@@ -1,5 +1,5 @@
-import { readFile, writeFile, rm } from 'node:fs/promises'
-import { spawn } from 'node:child_process'
+import {readFile, writeFile, rm} from 'node:fs/promises'
+import {spawn} from 'node:child_process'
 import path from 'node:path'
 
 function getArg(name) {
@@ -60,7 +60,7 @@ async function readJson(filePath) {
 
 async function removeDirIfExists(dirPath) {
   try {
-    await rm(dirPath, { recursive: true, force: true })
+    await rm(dirPath, {recursive: true, force: true})
   } catch {
     // ignore
   }
@@ -87,31 +87,61 @@ function buildCampusSidebarItems() {
       className: 'campusInfoItem campusInfoItem--administracao',
     },
     {
+      type: 'link',
+      label: 'Setor de Saúde',
+      href: '/docs/campus/setor-de-saude',
+      className: 'campusInfoItem campusInfoItem--saude',
+    },
+    {
       type: 'category',
       label: 'Cursos',
       collapsible: true,
       collapsed: true,
       className: 'campusInfoItem campusInfoItem--cursos',
       items: [
-        { type: 'html', value: '<div class="sidebarSectionHeading">TÉCNICOS</div>', defaultStyle: true },
-        { type: 'link', label: 'Administração (Integrado)', href: '/docs/cursos/tecnico-administracao-integrado' },
-        { type: 'link', label: 'Eventos (Integrado)', href: '/docs/cursos/tecnico-eventos-integrado' },
-        { type: 'link', label: 'Informática (Integrado)', href: '/docs/cursos/tecnico-informatica-integrado' },
-        { type: 'link', label: 'Administração (Subsequente)', href: '/docs/cursos/tecnico-administracao-subsequente' },
-        { type: 'link', label: 'Gastronomia (Subsequente)', href: '/docs/cursos/tecnico-gastronomia-subsequente' },
-        { type: 'link', label: 'Guia de Turismo (Subsequente)', href: '/docs/cursos/tecnico-guia-de-turismo-subsequente' },
         {
-          type: 'link',
-          label: 'Serviço de Restaurante e Bar (Subsequente)',
-          href: '/docs/cursos/tecnico-servico-de-restaurante-e-bar',
+          type: 'category',
+          label: 'Técnico',
+          collapsible: true,
+          collapsed: true,
+          className: 'campusCourseType campusCourseType--tecnico',
+          items: [
+            {type: 'link', label: 'Administração (Integrado)', href: '/docs/cursos/tecnico-administracao-integrado'},
+            {type: 'link', label: 'Eventos (Integrado)', href: '/docs/cursos/tecnico-eventos-integrado'},
+            {type: 'link', label: 'Informática (Integrado)', href: '/docs/cursos/tecnico-informatica-integrado'},
+            {type: 'link', label: 'Administração (Subsequente)', href: '/docs/cursos/tecnico-administracao-subsequente'},
+            {type: 'link', label: 'Gastronomia (Subsequente)', href: '/docs/cursos/tecnico-gastronomia-subsequente'},
+            {type: 'link', label: 'Guia de Turismo (Subsequente)', href: '/docs/cursos/tecnico-guia-de-turismo-subsequente'},
+            {
+              type: 'link',
+              label: 'Serviço de Restaurante e Bar (Subsequente)',
+              href: '/docs/cursos/tecnico-servico-de-restaurante-e-bar',
+            },
+            {type: 'link', label: 'Gastronomia (PROEJA)', href: '/docs/cursos/tecnico-gastronomia-proeja'},
+          ],
         },
-        { type: 'link', label: 'Gastronomia (PROEJA)', href: '/docs/cursos/tecnico-gastronomia-proeja' },
-        { type: 'html', value: '<div class="sidebarSectionHeading">LICENCIATURA</div>', defaultStyle: true },
-        { type: 'link', label: 'Licenciatura em Física', href: '/docs/cursos/licenciatura-fisica' },
-        { type: 'link', label: 'Licenciatura em Matemática', href: '/docs/cursos/licenciatura-matematica' },
-        { type: 'html', value: '<div class="sidebarSectionHeading">TECNOLOGIA</div>', defaultStyle: true },
-        { type: 'link', label: 'Gastronomia', href: '/docs/cursos/tecnologia-gastronomia' },
-        { type: 'link', label: 'Sistemas para Internet', href: '/docs/cursos/tecnologia-sistemas-para-internet' },
+        {
+          type: 'category',
+          label: 'Licenciatura',
+          collapsible: true,
+          collapsed: true,
+          className: 'campusCourseType campusCourseType--licenciatura',
+          items: [
+            {type: 'link', label: 'Licenciatura em Física', href: '/docs/cursos/licenciatura-fisica'},
+            {type: 'link', label: 'Licenciatura em Matemática', href: '/docs/cursos/licenciatura-matematica'},
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Tecnologia',
+          collapsible: true,
+          collapsed: true,
+          className: 'campusCourseType campusCourseType--tecnologia',
+          items: [
+            {type: 'link', label: 'Gastronomia', href: '/docs/cursos/tecnologia-gastronomia'},
+            {type: 'link', label: 'Sistemas para Internet', href: '/docs/cursos/tecnologia-sistemas-para-internet'},
+          ],
+        },
       ],
     },
     {
@@ -288,3 +318,4 @@ async function main() {
 }
 
 await main()
+
