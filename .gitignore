@@ -4,6 +4,7 @@
 # Production
 /build
 /build2
+/build3
 
 # Generated files
 .docusaurus
