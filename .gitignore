@@ -5,6 +5,11 @@
 /build
 /build2
 /build3
+/build4
+/build5
+/build6
+/build7
+/build8
 
 # Generated files
 .docusaurus
@@ -21,6 +26,3 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 yarn.lock
-
-/build4
-/build5

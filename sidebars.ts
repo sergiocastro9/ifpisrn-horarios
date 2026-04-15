@@ -53,13 +53,20 @@ const sidebars: SidebarsConfig = {
       type: 'html',
       value: '<div class="sidebarSectionTitle">INFORMAÇÕES DO CAMPUS</div>',
       defaultStyle: true,
+      className: 'campusInfoGroupTitle',
     },
-    'campus/administracao',
+    {
+      type: 'doc',
+      id: 'campus/administracao',
+      label: 'Administração',
+      className: 'campusInfoItem campusInfoItem--administracao',
+    },
     {
       type: 'category',
       label: 'Cursos',
       collapsible: true,
       collapsed: true,
+      className: 'campusInfoItem campusInfoItem--cursos',
       items: [
         {
           type: 'html',
@@ -93,21 +100,25 @@ const sidebars: SidebarsConfig = {
       label: 'Contato',
       collapsible: true,
       collapsed: true,
+      className: 'campusInfoItem campusInfoItem--contato',
       items: [
         {
           type: 'link',
           label: 'Email',
           href: '/docs/campus/contato#email',
+          className: 'campusInfoSubItem campusInfoSubItem--email',
         },
         {
           type: 'link',
           label: 'Telefone',
           href: '/docs/campus/contato#telefone',
+          className: 'campusInfoSubItem campusInfoSubItem--telefone',
         },
         {
           type: 'link',
           label: 'Endereço',
           href: '/docs/campus/contato#endereco',
+          className: 'campusInfoSubItem campusInfoSubItem--endereco',
         },
       ],
     },
