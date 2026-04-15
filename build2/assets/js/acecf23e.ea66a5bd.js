@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkifpisrn_horarios=self.webpackChunkifpisrn_horarios||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/ifpisrn-horarios/blog","blogTitle":"Blog","authorsListPath":"/ifpisrn-horarios/blog/authors"}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkifpisrn_horarios=self.webpackChunkifpisrn_horarios||[]).push([[6965],{7528:o=>{o.exports=JSON.parse('{"metadata":{"permalink":"/ifpisrn-horarios/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":0,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

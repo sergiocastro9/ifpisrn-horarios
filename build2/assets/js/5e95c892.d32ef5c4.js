@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkifpisrn_horarios=self.webpackChunkifpisrn_horarios||[]).push([[9647],{7121:(r,s,e)=>{e.r(s),e.d(s,{default:()=>h});e(6540);var a=e(4164),i=e(5500),n=e(7559),u=e(2831),c=e(1719),o=e(4848);function h(r){return(0,o.jsx)(i.e3,{className:(0,a.A)(n.G.wrapper.docsPages),children:(0,o.jsx)(c.A,{children:(0,u.v)(r.route.routes)})})}}}]);
