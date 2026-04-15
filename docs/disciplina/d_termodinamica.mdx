@@ -1,0 +1,80 @@
+---
+slug: /disciplina/termodinamica
+description: Termodinâmica
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Termodinâmica",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Termodinâmica",
+        "size": 1,
+        "teachers": [
+          "Antonio Sousa Ribeiro"
+        ],
+        "classroom": "Sala 21",
+        "students": [
+          "Lic. em Física - 5º Período (Noite) M725"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Termodinâmica",
+        "size": 1,
+        "teachers": [
+          "Antonio Sousa Ribeiro"
+        ],
+        "classroom": "Sala 21",
+        "students": [
+          "Lic. em Física - 5º Período (Noite) M725"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Termodinâmica
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

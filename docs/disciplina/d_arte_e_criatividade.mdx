@@ -1,0 +1,93 @@
+---
+slug: /disciplina/arte_e_criatividade
+description: Arte e Criatividade
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Arte e Criatividade",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Arte e Criatividade",
+        "size": 1,
+        "teachers": [
+          "Herica Marilia Barbosa Soares"
+        ],
+        "classroom": "Sala 01",
+        "students": [
+          "Téc. em Eventos (Integrado) - 1º EVENTOS (Manhã)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Arte e Criatividade",
+        "size": 1,
+        "teachers": [
+          "Herica Marilia Barbosa Soares"
+        ],
+        "classroom": "Sala 07",
+        "students": [
+          "Téc. em Eventos (Integrado) - 2º EVENTOS (Manhã)"
+        ],
+        "time": "11:00 - 12:00",
+        "color": ""
+      },
+      {
+        "subject": "Arte e Criatividade",
+        "size": 1,
+        "teachers": [
+          "Herica Marilia Barbosa Soares"
+        ],
+        "classroom": "Sala 15",
+        "students": [
+          "Téc. em Eventos (Integrado) - 1º EVENTOS (Tarde)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Arte e Criatividade
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

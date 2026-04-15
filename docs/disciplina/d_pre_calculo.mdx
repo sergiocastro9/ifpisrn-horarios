@@ -1,0 +1,80 @@
+---
+slug: /disciplina/pre_calculo
+description: Pré Cálculo
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Pré Cálculo",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Pré Cálculo",
+        "size": 1,
+        "teachers": [
+          "Rafaela Ribeiro Negreiros"
+        ],
+        "classroom": "Sala 22",
+        "students": [
+          "Lic. em Física - 1º Período (Noite) M725"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Pré Cálculo",
+        "size": 1,
+        "teachers": [
+          "Rafaela Ribeiro Negreiros"
+        ],
+        "classroom": "Sala 22",
+        "students": [
+          "Lic. em Física - 1º Período (Noite) M725"
+        ],
+        "time": "21:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Pré Cálculo
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

@@ -1,0 +1,80 @@
+---
+slug: /disciplina/educacao_e_saude_financeira
+description: Educação e Saúde Financeira
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Educação e Saúde Financeira",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Educação e Saúde Financeira",
+        "size": 1,
+        "teachers": [
+          "Professor Substituto (Contabilidade)"
+        ],
+        "classroom": "Sala 10",
+        "students": [
+          "Téc. em Administração (Integrado) - 2º ADM (Tarde)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Educação e Saúde Financeira",
+        "size": 1,
+        "teachers": [
+          "Professor Substituto (Contabilidade)"
+        ],
+        "classroom": "Sala 08",
+        "students": [
+          "Téc. em Administração (Integrado) - 2º ADM (Manhã)"
+        ],
+        "time": "10:00 - 12:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Educação e Saúde Financeira
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

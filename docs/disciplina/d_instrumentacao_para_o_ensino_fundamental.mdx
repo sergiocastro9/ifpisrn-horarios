@@ -1,0 +1,66 @@
+---
+slug: /disciplina/instrumentacao_para_o_ensino_fundamental
+description: Instrumentação para o Ensino Fundamental
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Instrumentação para o Ensino Fundamental",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Instrumentação para o Ensino Fundamental",
+        "size": 1,
+        "teachers": [
+          "Kelvin Lopes de Castro"
+        ],
+        "classroom": "Sala 21",
+        "students": [
+          "Lic. em Física - 5º Período (Noite) M725"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Instrumentação para o Ensino Fundamental
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

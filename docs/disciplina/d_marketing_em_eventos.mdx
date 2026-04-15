@@ -1,0 +1,66 @@
+---
+slug: /disciplina/marketing_em_eventos
+description: Marketing em Eventos
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Marketing em Eventos",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Marketing em Eventos",
+        "size": 1,
+        "teachers": [
+          "Clarissa Dias de Macedo Silva"
+        ],
+        "classroom": "Sala 07",
+        "students": [
+          "Téc. em Eventos (Integrado) - 2º EVENTOS (Manhã)"
+        ],
+        "time": "10:00 - 12:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Marketing em Eventos
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

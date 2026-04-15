@@ -1,0 +1,79 @@
+---
+slug: /disciplina/filosofia_da_educacao
+description: Filosofia da Educação
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Filosofia da Educação",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Filosofia da Educação",
+        "size": 1,
+        "teachers": [
+          "Joedson de Santana Oliveira"
+        ],
+        "classroom": "Sala 22",
+        "students": [
+          "Lic. em Matemática - 1º Período (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      },
+      {
+        "subject": "Filosofia da Educação",
+        "size": 1,
+        "teachers": [
+          "Joedson de Santana Oliveira"
+        ],
+        "classroom": "Sala 22",
+        "students": [
+          "Lic. em Física - 1º Período (Noite) M725"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Filosofia da Educação
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

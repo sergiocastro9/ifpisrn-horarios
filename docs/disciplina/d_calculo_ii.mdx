@@ -1,0 +1,80 @@
+---
+slug: /disciplina/calculo_ii
+description: Cálculo II
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Cálculo II",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Cálculo II",
+        "size": 1,
+        "teachers": [
+          "Fernando Gomes de Andrade"
+        ],
+        "classroom": "Sala 18",
+        "students": [
+          "Lic. em Matemática - 5º Período (Noite)"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Cálculo II",
+        "size": 1,
+        "teachers": [
+          "Fernando Gomes de Andrade"
+        ],
+        "classroom": "Sala 18",
+        "students": [
+          "Lic. em Matemática - 5º Período (Noite)"
+        ],
+        "time": "18:00 - 19:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Cálculo II
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

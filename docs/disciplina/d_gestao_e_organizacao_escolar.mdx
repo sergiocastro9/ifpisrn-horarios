@@ -1,0 +1,80 @@
+---
+slug: /disciplina/gestao_e_organizacao_escolar
+description: Gestão e Organização Escolar
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Gestão e Organização Escolar",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Gestão e Organização Escolar",
+        "size": 1,
+        "teachers": [
+          "Adriana Rocha Silva"
+        ],
+        "classroom": "Sala 15",
+        "students": [
+          "Lic. em Matemática - 3º Período (Noite)"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Gestão e Organização Escolar",
+        "size": 1,
+        "teachers": [
+          "Adriana Rocha Silva"
+        ],
+        "classroom": "Sala 15",
+        "students": [
+          "Lic. em Matemática - 3º Período (Noite)"
+        ],
+        "time": "20:00 - 21:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Gestão e Organização Escolar
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

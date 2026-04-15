@@ -1,0 +1,66 @@
+---
+slug: /disciplina/contabilidade_geral
+description: Contabilidade Geral
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Contabilidade Geral",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Contabilidade Geral",
+        "size": 1,
+        "teachers": [
+          "Professor Substituto (Contabilidade)"
+        ],
+        "classroom": "Sala 13",
+        "students": [
+          "Téc. em Administração (Integrado) - 1º ADM (Manhã)"
+        ],
+        "time": "10:00 - 11:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Contabilidade Geral
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

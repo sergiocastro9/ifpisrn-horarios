@@ -1,0 +1,80 @@
+---
+slug: /disciplina/instrumentacao_para_o_ensino_medio
+description: Instrumentação para o Ensino Médio
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Instrumentação para o Ensino Médio",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Instrumentação para o Ensino Médio",
+        "size": 1,
+        "teachers": [
+          "Kelvin Lopes de Castro"
+        ],
+        "classroom": "Sala 20",
+        "students": [
+          "Lic. em Física - 8º Período (Noite) M119"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Instrumentação para o Ensino Médio",
+        "size": 1,
+        "teachers": [
+          "Kelvin Lopes de Castro"
+        ],
+        "classroom": "Sala 20",
+        "students": [
+          "Lic. em Física - 8º Período (Noite) M119"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Instrumentação para o Ensino Médio
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

@@ -1,0 +1,66 @@
+---
+slug: /disciplina/pratica_profissional_v_planejamento_de_evento_artistico_cultural
+description: Prática Profissional V - Planejamento de Evento Artístico-Cultural
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Prática Profissional V - Planejamento de Evento Artístico-Cultural",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Prática Profissional V - Planejamento de Evento Artístico-Cultural",
+        "size": 1,
+        "teachers": [
+          "Flavia Oliveira da Silva Louzeiro"
+        ],
+        "classroom": "Sala 18",
+        "students": [
+          "Téc. em Eventos (Integrado) - 3º EVENTOS (Tarde)"
+        ],
+        "time": "14:30 - 15:30",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Prática Profissional V - Planejamento de Evento Artístico-Cultural
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

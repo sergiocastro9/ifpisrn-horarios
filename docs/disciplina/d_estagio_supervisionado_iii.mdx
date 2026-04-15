@@ -1,0 +1,80 @@
+---
+slug: /disciplina/estagio_supervisionado_iii
+description: Estágio Supervisionado III
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Estágio Supervisionado III",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Estágio Supervisionado III",
+        "size": 1,
+        "teachers": [
+          "Fernando Gomes de Andrade"
+        ],
+        "classroom": "Sala 17",
+        "students": [
+          "Lic. em Matemática - 7º Período (Noite)"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": [
+      {
+        "subject": "Estágio Supervisionado III",
+        "size": 1,
+        "teachers": [
+          "Fernando Gomes de Andrade"
+        ],
+        "classroom": "Sala 17",
+        "students": [
+          "Lic. em Matemática - 7º Período (Noite)"
+        ],
+        "time": "14:00 - 17:00",
+        "color": ""
+      }
+    ]
+  }
+],
+  alert: ""
+}
+
+# Estágio Supervisionado III
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

@@ -1,0 +1,94 @@
+---
+slug: /disciplina/logistica_empresarial
+description: Logística Empresarial
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Logística Empresarial",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Logística Empresarial",
+        "size": 1,
+        "teachers": [
+          "Clarissa Dias de Macedo Silva"
+        ],
+        "classroom": "Sala 13",
+        "students": [
+          "Téc. em Administração (Integrado) - 1º ADM (Manhã)"
+        ],
+        "time": "07:30 - 08:30",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Logística Empresarial",
+        "size": 1,
+        "teachers": [
+          "Clarissa Dias de Macedo Silva"
+        ],
+        "classroom": "Sala 17",
+        "students": [
+          "Téc. em Administração (Integrado) - 3º ADM (Manhã)"
+        ],
+        "time": "13:30 - 14:30",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Logística Empresarial",
+        "size": 1,
+        "teachers": [
+          "Clarissa Dias de Macedo Silva"
+        ],
+        "classroom": "Sala 17",
+        "students": [
+          "Téc. em Administração (Integrado) - 3º ADM (Manhã)"
+        ],
+        "time": "07:30 - 09:30",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Logística Empresarial
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

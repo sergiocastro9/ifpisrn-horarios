@@ -1,0 +1,80 @@
+---
+slug: /disciplina/eletricidade
+description: Eletricidade
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Eletricidade",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Eletricidade",
+        "size": 1,
+        "teachers": [
+          "Guilherme Severino Mendes de Araujo"
+        ],
+        "classroom": "Laboratório de Informática 3 (LAEPE)",
+        "students": [
+          "Lic. em Física - 7º Período (Tarde) M725"
+        ],
+        "time": "13:00 - 15:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Eletricidade",
+        "size": 1,
+        "teachers": [
+          "Guilherme Severino Mendes de Araujo"
+        ],
+        "classroom": "Laboratório de Informática 3 (LAEPE)",
+        "students": [
+          "Lic. em Física - 7º Período (Tarde) M725"
+        ],
+        "time": "13:00 - 15:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Eletricidade
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

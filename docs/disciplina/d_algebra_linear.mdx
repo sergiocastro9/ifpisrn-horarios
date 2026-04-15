@@ -1,0 +1,80 @@
+---
+slug: /disciplina/algebra_linear
+description: Álgebra Linear
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Álgebra Linear",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Álgebra Linear",
+        "size": 1,
+        "teachers": [
+          "Dalton Francisco Carvalho Sousa"
+        ],
+        "classroom": "Sala 18",
+        "students": [
+          "Lic. em Matemática - 5º Período (Noite)"
+        ],
+        "time": "20:00 - 21:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Álgebra Linear",
+        "size": 1,
+        "teachers": [
+          "Dalton Francisco Carvalho Sousa"
+        ],
+        "classroom": "Sala 18",
+        "students": [
+          "Lic. em Matemática - 5º Período (Noite)"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Álgebra Linear
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

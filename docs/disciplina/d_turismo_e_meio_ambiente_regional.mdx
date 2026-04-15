@@ -1,0 +1,80 @@
+---
+slug: /disciplina/turismo_e_meio_ambiente_regional
+description: Turismo e Meio Ambiente Regional
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Turismo e Meio Ambiente Regional",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Turismo e Meio Ambiente Regional",
+        "size": 1,
+        "teachers": [
+          "Angela Araujo Gomes"
+        ],
+        "classroom": "Sala 16",
+        "students": [
+          "Téc. em Guia de Turismo (Subsequente) - Módulo I (Noite)"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Turismo e Meio Ambiente Regional",
+        "size": 1,
+        "teachers": [
+          "Angela Araujo Gomes"
+        ],
+        "classroom": "Sala 16",
+        "students": [
+          "Téc. em Guia de Turismo (Subsequente) - Módulo I (Noite)"
+        ],
+        "time": "20:00 - 21:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Turismo e Meio Ambiente Regional
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

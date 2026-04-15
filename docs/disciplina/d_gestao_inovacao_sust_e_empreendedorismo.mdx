@@ -1,0 +1,66 @@
+---
+slug: /disciplina/gestao_inovacao_sust_e_empreendedorismo
+description: Gestão, Inovação, Sust. e Empreendedorismo
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Gestão, Inovação, Sust. e Empreendedorismo",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Gestão, Inovação, Sust. e Empreendedorismo",
+        "size": 1,
+        "teachers": [
+          "Aloana de Araujo Gomes Negreiros"
+        ],
+        "classroom": "Sala 17",
+        "students": [
+          "Téc. em Administração (Integrado) - 3º ADM (Manhã)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Gestão, Inovação, Sust. e Empreendedorismo
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

@@ -1,0 +1,66 @@
+---
+slug: /disciplina/laboratorio_de_fluidos_ondas_e_termodinamica
+description: Laboratório de Fluidos, Ondas e Termodinâmica
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Laboratório de Fluidos, Ondas e Termodinâmica",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Laboratório de Fluidos, Ondas e Termodinâmica",
+        "size": 1,
+        "teachers": [
+          "Guilherme Severino Mendes de Araujo"
+        ],
+        "classroom": "Sala 21",
+        "students": [
+          "Lic. em Física - 5º Período (Noite) M725"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Laboratório de Fluidos, Ondas e Termodinâmica
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

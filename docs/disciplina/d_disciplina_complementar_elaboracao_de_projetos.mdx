@@ -1,0 +1,66 @@
+---
+slug: /disciplina/disciplina_complementar_elaboracao_de_projetos
+description: Disciplina Complementar - Elaboração de Projetos
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Disciplina Complementar - Elaboração de Projetos",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Disciplina Complementar - Elaboração de Projetos",
+        "size": 1,
+        "teachers": [
+          "Professor Substituto (Contabilidade)"
+        ],
+        "classroom": "Sala 17",
+        "students": [
+          "Téc. em Administração (Integrado) - 3º ADM (Manhã)"
+        ],
+        "time": "07:30 - 09:30",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Disciplina Complementar - Elaboração de Projetos
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

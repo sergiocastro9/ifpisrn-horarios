@@ -1,0 +1,80 @@
+---
+slug: /disciplina/matematica_comercial_e_financeira
+description: Matemática Comercial e Financeira
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Matemática Comercial e Financeira",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Matemática Comercial e Financeira",
+        "size": 1,
+        "teachers": [
+          "Luan da Silva Santos"
+        ],
+        "classroom": "Sala 01",
+        "students": [
+          "Lic. em Matemática - PPC 2016 (A)"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Matemática Comercial e Financeira",
+        "size": 1,
+        "teachers": [
+          "Luan da Silva Santos"
+        ],
+        "classroom": "Sala 01",
+        "students": [
+          "Lic. em Matemática - PPC 2016 (A)"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Matemática Comercial e Financeira
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

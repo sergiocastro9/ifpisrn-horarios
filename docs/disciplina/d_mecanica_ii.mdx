@@ -1,0 +1,80 @@
+---
+slug: /disciplina/mecanica_ii
+description: Mecânica II
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Mecânica II",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Mecânica II",
+        "size": 1,
+        "teachers": [
+          "Railton Vieira dos Santos"
+        ],
+        "classroom": "Laboratório de Matemática",
+        "students": [
+          "Lic. em Física - 3º Período (Tarde) M725"
+        ],
+        "time": "14:00 - 16:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Mecânica II",
+        "size": 1,
+        "teachers": [
+          "Railton Vieira dos Santos"
+        ],
+        "classroom": "Laboratório de Matemática",
+        "students": [
+          "Lic. em Física - 3º Período (Tarde) M725"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Mecânica II
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

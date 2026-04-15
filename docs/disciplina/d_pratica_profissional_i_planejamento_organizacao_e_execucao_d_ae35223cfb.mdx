@@ -1,0 +1,80 @@
+---
+slug: /disciplina/pratica_profissional_i_planejamento_organizacao_e_execucao_de_eventos_social_e_esportivo
+description: Prática Profissional I - Planejamento, Organização e Execução de Eventos Social e Esportivo
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Prática Profissional I - Planejamento, Organização e Execução de Eventos Social e Esportivo",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Prática Profissional I - Planejamento, Organização e Execução de Eventos Social e Esportivo",
+        "size": 1,
+        "teachers": [
+          "Kaise Canuto da Silva"
+        ],
+        "classroom": "Sala 15",
+        "students": [
+          "Téc. em Eventos (Integrado) - 1º EVENTOS (Tarde)"
+        ],
+        "time": "07:30 - 09:30",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Prática Profissional I - Planejamento, Organização e Execução de Eventos Social e Esportivo",
+        "size": 1,
+        "teachers": [
+          "Flavia Oliveira da Silva Louzeiro"
+        ],
+        "classroom": "Sala 01",
+        "students": [
+          "Téc. em Eventos (Integrado) - 1º EVENTOS (Manhã)"
+        ],
+        "time": "07:30 - 09:30",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Prática Profissional I - Planejamento, Organização e Execução de Eventos Social e Esportivo
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

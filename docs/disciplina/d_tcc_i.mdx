@@ -1,0 +1,119 @@
+---
+slug: /disciplina/tcc_i
+description: TCC I
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "TCC I",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "TCC I",
+        "size": 1,
+        "teachers": [
+          "Aquila Matheus de Souza Oliveira"
+        ],
+        "classroom": "Laboratório de Informática 3 (LAEPE)",
+        "students": [
+          "Tecnologia em Gastronomia - 5º Período (Noite)"
+        ],
+        "time": "18:00 - 19:30",
+        "color": ""
+      },
+      {
+        "subject": "TCC I",
+        "size": 1,
+        "teachers": [
+          "Railton Vieira dos Santos"
+        ],
+        "classroom": "Sala 20",
+        "students": [
+          "Lic. em Física - 8º Período (Noite) M119"
+        ],
+        "time": "19:00 - 19:30",
+        "color": ""
+      },
+      {
+        "subject": "TCC I",
+        "size": 1,
+        "teachers": [
+          "Aquila Matheus de Souza Oliveira"
+        ],
+        "classroom": "Laboratório de Informática 3 (LAEPE)",
+        "students": [
+          "Tecnologia em Gastronomia - 5º Período (Noite)"
+        ],
+        "time": "19:30 - 20:00",
+        "color": ""
+      },
+      {
+        "subject": "TCC I",
+        "size": 1,
+        "teachers": [
+          "Railton Vieira dos Santos"
+        ],
+        "classroom": "Sala 20",
+        "students": [
+          "Lic. em Física - 8º Período (Noite) M119"
+        ],
+        "time": "19:30 - 21:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": [
+      {
+        "subject": "TCC I",
+        "size": 1,
+        "teachers": [
+          "Railton Vieira dos Santos"
+        ],
+        "classroom": "Sala 20",
+        "students": [
+          "Lic. em Física - 8º Período (Noite) M119"
+        ],
+        "time": "19:00 - 21:00",
+        "color": ""
+      }
+    ]
+  }
+],
+  alert: ""
+}
+
+# TCC I
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

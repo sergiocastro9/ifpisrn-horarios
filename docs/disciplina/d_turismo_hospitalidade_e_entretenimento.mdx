@@ -1,0 +1,80 @@
+---
+slug: /disciplina/turismo_hospitalidade_e_entretenimento
+description: Turismo, Hospitalidade e Entretenimento
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Turismo, Hospitalidade e Entretenimento",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Turismo, Hospitalidade e Entretenimento",
+        "size": 1,
+        "teachers": [
+          "Angela Araujo Gomes"
+        ],
+        "classroom": "Sala 15",
+        "students": [
+          "Téc. em Eventos (Integrado) - 1º EVENTOS (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Turismo, Hospitalidade e Entretenimento",
+        "size": 1,
+        "teachers": [
+          "Angela Araujo Gomes"
+        ],
+        "classroom": "Sala 01",
+        "students": [
+          "Téc. em Eventos (Integrado) - 1º EVENTOS (Manhã)"
+        ],
+        "time": "07:30 - 09:30",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Turismo, Hospitalidade e Entretenimento
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

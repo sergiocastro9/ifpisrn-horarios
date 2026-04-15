@@ -1,0 +1,66 @@
+---
+slug: /disciplina/atividades_de_extensao_5_execucao_e_resultados
+description: Atividades de Extensão 5 - Execução e Resultados
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Atividades de Extensão 5 - Execução e Resultados",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Atividades de Extensão 5 - Execução e Resultados",
+        "size": 1,
+        "teachers": [
+          "Marciano Vieira de Andrade"
+        ],
+        "classroom": "Laboratório de Informática 3 (LAEPE)",
+        "students": [
+          "Lic. em Física - 7º Período (Tarde) M725"
+        ],
+        "time": "14:00 - 16:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Atividades de Extensão 5 - Execução e Resultados
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

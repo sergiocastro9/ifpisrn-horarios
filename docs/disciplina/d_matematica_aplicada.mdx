@@ -1,0 +1,80 @@
+---
+slug: /disciplina/matematica_aplicada
+description: Matemática Aplicada
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Matemática Aplicada",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Matemática Aplicada",
+        "size": 1,
+        "teachers": [
+          "Rafaela Ribeiro Negreiros"
+        ],
+        "classroom": "Sala 13",
+        "students": [
+          "Sistemas para Internet - 1° Período"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Matemática Aplicada",
+        "size": 1,
+        "teachers": [
+          "Rafaela Ribeiro Negreiros"
+        ],
+        "classroom": "Sala 13",
+        "students": [
+          "Sistemas para Internet - 1° Período"
+        ],
+        "time": "21:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Matemática Aplicada
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

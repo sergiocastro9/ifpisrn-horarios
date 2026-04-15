@@ -1,0 +1,225 @@
+---
+slug: /disciplina/biologia
+description: Biologia
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Biologia",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Biologia",
+        "size": 1,
+        "teachers": [
+          "Lais dos Santos Neri da Silva"
+        ],
+        "classroom": "Sala 19",
+        "students": [
+          "Téc. em Informática (Integrado) - 3º INFO (Manhã)"
+        ],
+        "time": "07:30 - 09:30",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Biologia",
+        "size": 1,
+        "teachers": [
+          "Lais dos Santos Neri da Silva"
+        ],
+        "classroom": "Sala 17",
+        "students": [
+          "Téc. em Administração (Integrado) - 3º ADM (Manhã)"
+        ],
+        "time": "07:30 - 09:00",
+        "color": ""
+      },
+      {
+        "subject": "Biologia",
+        "size": 1,
+        "teachers": [
+          "Caroline Costa Lucas"
+        ],
+        "classroom": "Sala 01",
+        "students": [
+          "Téc. em Eventos (Integrado) - 1º EVENTOS (Manhã)"
+        ],
+        "time": "08:30 - 09:00",
+        "color": ""
+      },
+      {
+        "subject": "Biologia",
+        "size": 1,
+        "teachers": [
+          "Lais dos Santos Neri da Silva"
+        ],
+        "classroom": "Sala 17",
+        "students": [
+          "Téc. em Administração (Integrado) - 3º ADM (Manhã)"
+        ],
+        "time": "09:00 - 09:30",
+        "color": ""
+      },
+      {
+        "subject": "Biologia",
+        "size": 1,
+        "teachers": [
+          "Caroline Costa Lucas"
+        ],
+        "classroom": "Sala 01",
+        "students": [
+          "Téc. em Eventos (Integrado) - 1º EVENTOS (Manhã)"
+        ],
+        "time": "09:00 - 09:30",
+        "color": ""
+      },
+      {
+        "subject": "Biologia",
+        "size": 1,
+        "teachers": [
+          "Lais dos Santos Neri da Silva"
+        ],
+        "classroom": "Sala 20",
+        "students": [
+          "Téc. em Informática (Integrado) - 3º INFO (Tarde)"
+        ],
+        "time": "10:00 - 11:00",
+        "color": ""
+      },
+      {
+        "subject": "Biologia",
+        "size": 1,
+        "teachers": [
+          "Caroline Costa Lucas"
+        ],
+        "classroom": "Sala 14",
+        "students": [
+          "Téc. em Informática (Integrado) - 1º INFO (Manhã)"
+        ],
+        "time": "11:00 - 11:30",
+        "color": ""
+      },
+      {
+        "subject": "Biologia",
+        "size": 1,
+        "teachers": [
+          "Lais dos Santos Neri da Silva"
+        ],
+        "classroom": "Sala 20",
+        "students": [
+          "Téc. em Informática (Integrado) - 3º INFO (Tarde)"
+        ],
+        "time": "11:00 - 11:30",
+        "color": ""
+      },
+      {
+        "subject": "Biologia",
+        "size": 1,
+        "teachers": [
+          "Caroline Costa Lucas"
+        ],
+        "classroom": "Sala 14",
+        "students": [
+          "Téc. em Informática (Integrado) - 1º INFO (Manhã)"
+        ],
+        "time": "11:30 - 12:00",
+        "color": ""
+      },
+      {
+        "subject": "Biologia",
+        "size": 1,
+        "teachers": [
+          "Lais dos Santos Neri da Silva"
+        ],
+        "classroom": "Sala 20",
+        "students": [
+          "Téc. em Informática (Integrado) - 3º INFO (Tarde)"
+        ],
+        "time": "11:30 - 12:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Biologia",
+        "size": 1,
+        "teachers": [
+          "Caroline Costa Lucas"
+        ],
+        "classroom": "Sala 15",
+        "students": [
+          "Téc. em Eventos (Integrado) - 1º EVENTOS (Tarde)"
+        ],
+        "time": "16:00 - 17:00",
+        "color": ""
+      },
+      {
+        "subject": "Biologia",
+        "size": 1,
+        "teachers": [
+          "Lais dos Santos Neri da Silva"
+        ],
+        "classroom": "Sala 07",
+        "students": [
+          "Téc. Gastronomia (PROEJA) - 4º Período (Noite)"
+        ],
+        "time": "18:00 - 19:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Biologia",
+        "size": 1,
+        "teachers": [
+          "Caroline Costa Lucas"
+        ],
+        "classroom": "Sala 13",
+        "students": [
+          "Téc. em Administração (Integrado) - 1º ADM (Manhã)"
+        ],
+        "time": "14:30 - 15:30",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Biologia
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

@@ -1,0 +1,66 @@
+---
+slug: /disciplina/planejamento_e_organizacao_da_gestao_de_pessoas
+description: Planejamento e Organização da Gestão de Pessoas
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Planejamento e Organização da Gestão de Pessoas",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Planejamento e Organização da Gestão de Pessoas",
+        "size": 1,
+        "teachers": [
+          "Raimunda Ribeiro de Oliveira"
+        ],
+        "classroom": "Sala 08",
+        "students": [
+          "Téc. em Administração (Subsequente) - Módulo II (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Planejamento e Organização da Gestão de Pessoas
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

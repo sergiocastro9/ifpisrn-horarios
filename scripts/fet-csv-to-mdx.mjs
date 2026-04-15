@@ -192,13 +192,16 @@ async function main() {
   const professorDir = path.join(docsRoot, 'professor')
   const turmaDir = path.join(docsRoot, 'turma')
   const salaDir = path.join(docsRoot, 'sala')
+  const disciplinaDir = path.join(docsRoot, 'disciplina')
 
   await rm(professorDir, { recursive: true, force: true })
   await rm(turmaDir, { recursive: true, force: true })
   await rm(salaDir, { recursive: true, force: true })
+  await rm(disciplinaDir, { recursive: true, force: true })
   await mkdir(professorDir, { recursive: true })
   await mkdir(turmaDir, { recursive: true })
   await mkdir(salaDir, { recursive: true })
+  await mkdir(disciplinaDir, { recursive: true })
 
   const csvContent = await readFile(csvPath, 'utf8')
   const lines = csvContent.split(/\r?\n/).filter((l) => l.trim().length > 0)
@@ -216,6 +219,7 @@ async function main() {
   const teachersMap = new Map()
   const studentsMap = new Map()
   const roomsMap = new Map()
+  const subjectsMap = new Map()
 
   function ensureEntity(map, name) {
     if (!map.has(name)) map.set(name, ensureDaysMap())
@@ -264,6 +268,13 @@ async function main() {
     const roomName = classroom
     if (roomName && roomName !== 'Indefinido') {
       const dayMap = ensureEntity(roomsMap, roomName)
+      if (!dayMap.has(dayName)) dayMap.set(dayName, [])
+      dayMap.get(dayName).push(entry)
+    }
+
+    // Disciplinas (Subjects) - always create a page for the subject name
+    {
+      const dayMap = ensureEntity(subjectsMap, subject)
       if (!dayMap.has(dayName)) dayMap.set(dayName, [])
       dayMap.get(dayName).push(entry)
     }
@@ -324,6 +335,7 @@ async function main() {
   await writeEntityDocs(teachersMap, professorDir, '/professor', 'p_')
   await writeTurmaDocs(studentsMap)
   await writeEntityDocs(roomsMap, salaDir, '/sala', 's_')
+  await writeEntityDocs(subjectsMap, disciplinaDir, '/disciplina', 'd_')
 
   console.log(
     JSON.stringify(
@@ -331,6 +343,7 @@ async function main() {
         professors: teachersMap.size,
         turmas: studentsMap.size,
         salas: roomsMap.size,
+        disciplinas: subjectsMap.size,
       },
       null,
       2,

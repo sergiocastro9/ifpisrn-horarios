@@ -1,0 +1,80 @@
+---
+slug: /disciplina/matematica_e_educacao_financeira
+description: Matemática e Educação Financeira
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Matemática e Educação Financeira",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Matemática e Educação Financeira",
+        "size": 1,
+        "teachers": [
+          "Luan da Silva Santos"
+        ],
+        "classroom": "Sala 15",
+        "students": [
+          "Lic. em Matemática - 3º Período (Noite)"
+        ],
+        "time": "18:00 - 19:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Matemática e Educação Financeira",
+        "size": 1,
+        "teachers": [
+          "Luan da Silva Santos"
+        ],
+        "classroom": "Sala 15",
+        "students": [
+          "Lic. em Matemática - 3º Período (Noite)"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Matemática e Educação Financeira
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

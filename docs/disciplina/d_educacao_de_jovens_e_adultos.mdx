@@ -1,0 +1,66 @@
+---
+slug: /disciplina/educacao_de_jovens_e_adultos
+description: Educação de Jovens e Adultos
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Educação de Jovens e Adultos",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Educação de Jovens e Adultos",
+        "size": 1,
+        "teachers": [
+          "Marcelo Bruno Araujo Queiroz"
+        ],
+        "classroom": "Sala 15",
+        "students": [
+          "Lic. em Matemática - 3º Período (Noite)"
+        ],
+        "time": "18:00 - 21:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Educação de Jovens e Adultos
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

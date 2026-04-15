@@ -1,0 +1,93 @@
+---
+slug: /disciplina/fundamentos_e_metodologia_de_extensao_no_ensino_superior
+description: Fundamentos e Metodologia de Extensão no Ensino Superior
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Fundamentos e Metodologia de Extensão no Ensino Superior",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Fundamentos e Metodologia de Extensão no Ensino Superior",
+        "size": 1,
+        "teachers": [
+          "Marcos Antonio Marques Lima"
+        ],
+        "classroom": "Sala 22",
+        "students": [
+          "Lic. em Física - 1º Período (Noite) M725"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Fundamentos e Metodologia de Extensão no Ensino Superior",
+        "size": 1,
+        "teachers": [
+          "Marcos Antonio Marques Lima"
+        ],
+        "classroom": "Sala 22",
+        "students": [
+          "Lic. em Matemática - 1º Período (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      },
+      {
+        "subject": "Fundamentos e Metodologia de Extensão no Ensino Superior",
+        "size": 1,
+        "teachers": [
+          "Gerlane Dantas da Silva"
+        ],
+        "classroom": "Sala 14",
+        "students": [
+          "Tecnologia em Gastronomia - 1º Período (Noite)"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Fundamentos e Metodologia de Extensão no Ensino Superior
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

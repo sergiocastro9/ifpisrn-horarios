@@ -1,0 +1,80 @@
+---
+slug: /disciplina/laboratorio_de_ensino_de_matematica
+description: Laboratório de Ensino de Matemática
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Laboratório de Ensino de Matemática",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Laboratório de Ensino de Matemática",
+        "size": 1,
+        "teachers": [
+          "Marcelo Bruno Araujo Queiroz"
+        ],
+        "classroom": "Laboratório de Matemática",
+        "students": [
+          "Lic. em Matemática - PPC 2016 (B)"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Laboratório de Ensino de Matemática",
+        "size": 1,
+        "teachers": [
+          "Marcelo Bruno Araujo Queiroz"
+        ],
+        "classroom": "Laboratório de Matemática",
+        "students": [
+          "Lic. em Matemática - PPC 2016 (B)"
+        ],
+        "time": "21:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Laboratório de Ensino de Matemática
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

@@ -1,0 +1,144 @@
+---
+slug: /disciplina/metodologia_cientifica
+description: Metodologia Científica
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Metodologia Científica",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Metodologia Científica",
+        "size": 1,
+        "teachers": [
+          "Caroline Costa Lucas"
+        ],
+        "classroom": "Sala 22",
+        "students": [
+          "Lic. em Matemática - 1º Período (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      },
+      {
+        "subject": "Metodologia Científica",
+        "size": 1,
+        "teachers": [
+          "Caroline Costa Lucas"
+        ],
+        "classroom": "Sala 22",
+        "students": [
+          "Lic. em Física - 1º Período (Noite) M725"
+        ],
+        "time": "19:00 - 20:00",
+        "color": ""
+      },
+      {
+        "subject": "Metodologia Científica",
+        "size": 1,
+        "teachers": [
+          "Paul Symon Ribeiro Rocha"
+        ],
+        "classroom": "Sala 10",
+        "students": [
+          "Sistemas para Internet - 3° Período"
+        ],
+        "time": "20:00 - 20:30",
+        "color": ""
+      },
+      {
+        "subject": "Metodologia Científica",
+        "size": 1,
+        "teachers": [
+          "Caroline Costa Lucas"
+        ],
+        "classroom": "Sala 22",
+        "students": [
+          "Lic. em Física - 1º Período (Noite) M725"
+        ],
+        "time": "20:00 - 20:30",
+        "color": ""
+      },
+      {
+        "subject": "Metodologia Científica",
+        "size": 1,
+        "teachers": [
+          "Paul Symon Ribeiro Rocha"
+        ],
+        "classroom": "Sala 10",
+        "students": [
+          "Sistemas para Internet - 3° Período"
+        ],
+        "time": "20:30 - 21:00",
+        "color": ""
+      },
+      {
+        "subject": "Metodologia Científica",
+        "size": 1,
+        "teachers": [
+          "Caroline Costa Lucas"
+        ],
+        "classroom": "Sala 22",
+        "students": [
+          "Lic. em Física - 1º Período (Noite) M725"
+        ],
+        "time": "20:30 - 21:00",
+        "color": ""
+      },
+      {
+        "subject": "Metodologia Científica",
+        "size": 1,
+        "teachers": [
+          "Paul Symon Ribeiro Rocha"
+        ],
+        "classroom": "Sala 10",
+        "students": [
+          "Sistemas para Internet - 3° Período"
+        ],
+        "time": "21:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Metodologia Científica
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

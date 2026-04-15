@@ -1,0 +1,80 @@
+---
+slug: /disciplina/patrimonio_cultural_regional
+description: Patrimônio Cultural Regional
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Patrimônio Cultural Regional",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Patrimônio Cultural Regional",
+        "size": 1,
+        "teachers": [
+          "Kaise Canuto da Silva"
+        ],
+        "classroom": "Sala 16",
+        "students": [
+          "Téc. em Guia de Turismo (Subsequente) - Módulo I (Noite)"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Patrimônio Cultural Regional",
+        "size": 1,
+        "teachers": [
+          "Kaise Canuto da Silva"
+        ],
+        "classroom": "Sala 16",
+        "students": [
+          "Téc. em Guia de Turismo (Subsequente) - Módulo I (Noite)"
+        ],
+        "time": "21:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Patrimônio Cultural Regional
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

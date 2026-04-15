@@ -1,0 +1,82 @@
+---
+slug: /disciplina/calculo_numerico
+description: Cálculo Numérico
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Cálculo Numérico",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Cálculo Numérico",
+        "size": 1,
+        "teachers": [
+          "Luan da Silva Santos"
+        ],
+        "classroom": "Indefinido",
+        "students": [
+          "Lic. em Matemática - 7º Período (Noite)",
+          "Lic. em Matemática - PPC 2016 (A)"
+        ],
+        "time": "19:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Cálculo Numérico",
+        "size": 1,
+        "teachers": [
+          "Luan da Silva Santos"
+        ],
+        "classroom": "Indefinido",
+        "students": [
+          "Lic. em Matemática - 7º Período (Noite)",
+          "Lic. em Matemática - PPC 2016 (A)"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Cálculo Numérico
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

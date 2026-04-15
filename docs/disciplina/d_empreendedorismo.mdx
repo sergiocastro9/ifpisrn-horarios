@@ -1,0 +1,107 @@
+---
+slug: /disciplina/empreendedorismo
+description: Empreendedorismo
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Empreendedorismo",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Empreendedorismo",
+        "size": 1,
+        "teachers": [
+          "Aloana de Araujo Gomes Negreiros"
+        ],
+        "classroom": "Sala 07",
+        "students": [
+          "Téc. em Administração (Subsequente) - Módulo II (Tarde)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Empreendedorismo",
+        "size": 1,
+        "teachers": [
+          "Aloana de Araujo Gomes Negreiros"
+        ],
+        "classroom": "Sala 08",
+        "students": [
+          "Téc. Gastronomia (PROEJA) - 5º Período (Noite)"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Empreendedorismo",
+        "size": 1,
+        "teachers": [
+          "Aloana de Araujo Gomes Negreiros"
+        ],
+        "classroom": "Sala 07",
+        "students": [
+          "Téc. em Eventos (Integrado) - 2º EVENTOS (Manhã)"
+        ],
+        "time": "07:30 - 09:30",
+        "color": ""
+      },
+      {
+        "subject": "Empreendedorismo",
+        "size": 1,
+        "teachers": [
+          "Aloana de Araujo Gomes Negreiros"
+        ],
+        "classroom": "Sala 08",
+        "students": [
+          "Téc. Gastronomia (PROEJA) - 5º Período (Noite)"
+        ],
+        "time": "18:00 - 19:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Empreendedorismo
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

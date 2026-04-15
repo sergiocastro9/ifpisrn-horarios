@@ -1,0 +1,66 @@
+---
+slug: /disciplina/fundamentos_juridicos_da_iniciativa_privada
+description: Fundamentos Jurídicos da Iniciativa Privada
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Fundamentos Jurídicos da Iniciativa Privada",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Fundamentos Jurídicos da Iniciativa Privada",
+        "size": 1,
+        "teachers": [
+          "Joedson de Santana Oliveira"
+        ],
+        "classroom": "Sala 08",
+        "students": [
+          "Téc. em Administração (Subsequente) - Módulo II (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Fundamentos Jurídicos da Iniciativa Privada
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

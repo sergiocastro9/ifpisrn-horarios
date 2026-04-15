@@ -1,0 +1,80 @@
+---
+slug: /disciplina/pratica_profissional_iii
+description: Prática Profissional III
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Prática Profissional III",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Prática Profissional III",
+        "size": 1,
+        "teachers": [
+          "Vanessa Araujo Sales"
+        ],
+        "classroom": "Sala 01",
+        "students": [
+          "Lic. em Matemática - PPC 2016 (A)"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Prática Profissional III",
+        "size": 1,
+        "teachers": [
+          "Vanessa Araujo Sales"
+        ],
+        "classroom": "Sala 01",
+        "students": [
+          "Lic. em Matemática - PPC 2016 (A)"
+        ],
+        "time": "15:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Prática Profissional III
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

@@ -1,0 +1,106 @@
+---
+slug: /disciplina/educacao_especial_e_inclusiva
+description: Educação Especial e Inclusiva
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Educação Especial e Inclusiva",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Educação Especial e Inclusiva",
+        "size": 1,
+        "teachers": [
+          "Amaya de Oliveira Santos"
+        ],
+        "classroom": "Laboratório de Matemática",
+        "students": [
+          "Lic. em Física - 3º Período (Tarde) M725"
+        ],
+        "time": "14:00 - 16:00",
+        "color": ""
+      },
+      {
+        "subject": "Educação Especial e Inclusiva",
+        "size": 1,
+        "teachers": [
+          "Amaya de Oliveira Santos"
+        ],
+        "classroom": "Sala 18",
+        "students": [
+          "Lic. em Matemática - 5º Período (Noite)"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Educação Especial e Inclusiva",
+        "size": 1,
+        "teachers": [
+          "Amaya de Oliveira Santos"
+        ],
+        "classroom": "Laboratório de Matemática",
+        "students": [
+          "Lic. em Física - 3º Período (Tarde) M725"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      },
+      {
+        "subject": "Educação Especial e Inclusiva",
+        "size": 1,
+        "teachers": [
+          "Amaya de Oliveira Santos"
+        ],
+        "classroom": "Sala 18",
+        "students": [
+          "Lic. em Matemática - 5º Período (Noite)"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Educação Especial e Inclusiva
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

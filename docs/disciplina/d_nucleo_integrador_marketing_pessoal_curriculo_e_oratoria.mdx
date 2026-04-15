@@ -1,0 +1,66 @@
+---
+slug: /disciplina/nucleo_integrador_marketing_pessoal_curriculo_e_oratoria
+description: Núcleo Integrador - Marketing Pessoal, Currículo e Oratória
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Núcleo Integrador - Marketing Pessoal, Currículo e Oratória",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Núcleo Integrador - Marketing Pessoal, Currículo e Oratória",
+        "size": 1,
+        "teachers": [
+          "Aloana de Araujo Gomes Negreiros"
+        ],
+        "classroom": "Sala 13",
+        "students": [
+          "Téc. em Administração (Integrado) - 1º ADM (Manhã)"
+        ],
+        "time": "08:30 - 09:30",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Núcleo Integrador - Marketing Pessoal, Currículo e Oratória
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

@@ -1,0 +1,80 @@
+---
+slug: /disciplina/engenharia_de_software_i
+description: Engenharia de Software I
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Engenharia de Software I",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Engenharia de Software I",
+        "size": 1,
+        "teachers": [
+          "Alexandre Cristian Lages de Araujo"
+        ],
+        "classroom": "Sala 13",
+        "students": [
+          "Sistemas para Internet - 1° Período"
+        ],
+        "time": "18:00 - 19:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Engenharia de Software I",
+        "size": 1,
+        "teachers": [
+          "Alexandre Cristian Lages de Araujo"
+        ],
+        "classroom": "Sala 13",
+        "students": [
+          "Sistemas para Internet - 1° Período"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Engenharia de Software I
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

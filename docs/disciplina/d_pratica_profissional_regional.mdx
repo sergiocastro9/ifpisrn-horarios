@@ -1,0 +1,80 @@
+---
+slug: /disciplina/pratica_profissional_regional
+description: Prática Profissional Regional
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Prática Profissional Regional",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Prática Profissional Regional",
+        "size": 1,
+        "teachers": [
+          "Flavia Oliveira da Silva Louzeiro"
+        ],
+        "classroom": "Sala 16",
+        "students": [
+          "Téc. em Guia de Turismo (Subsequente) - Módulo I (Noite)"
+        ],
+        "time": "18:00 - 19:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Prática Profissional Regional",
+        "size": 1,
+        "teachers": [
+          "Flavia Oliveira da Silva Louzeiro"
+        ],
+        "classroom": "Sala 16",
+        "students": [
+          "Téc. em Guia de Turismo (Subsequente) - Módulo I (Noite)"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Prática Profissional Regional
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

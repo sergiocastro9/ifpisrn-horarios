@@ -1,0 +1,66 @@
+---
+slug: /disciplina/atividades_de_extensao_3_execucao_e_resultados
+description: Atividades de Extensão 3 - Execução e Resultados
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Atividades de Extensão 3 - Execução e Resultados",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Atividades de Extensão 3 - Execução e Resultados",
+        "size": 1,
+        "teachers": [
+          "Marcelo Bruno Araujo Queiroz"
+        ],
+        "classroom": "Sala 21",
+        "students": [
+          "Lic. em Física - 5º Período (Noite) M725"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Atividades de Extensão 3 - Execução e Resultados
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

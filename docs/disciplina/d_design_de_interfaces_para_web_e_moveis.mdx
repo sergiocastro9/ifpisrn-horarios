@@ -1,0 +1,80 @@
+---
+slug: /disciplina/design_de_interfaces_para_web_e_moveis
+description: Design de Interfaces para Web e Móveis
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Design de Interfaces para Web e Móveis",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Design de Interfaces para Web e Móveis",
+        "size": 1,
+        "teachers": [
+          "Paul Symon Ribeiro Rocha"
+        ],
+        "classroom": "Sala 13",
+        "students": [
+          "Sistemas para Internet - 1° Período"
+        ],
+        "time": "20:00 - 21:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Design de Interfaces para Web e Móveis",
+        "size": 1,
+        "teachers": [
+          "Paul Symon Ribeiro Rocha"
+        ],
+        "classroom": "Sala 13",
+        "students": [
+          "Sistemas para Internet - 1° Período"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Design de Interfaces para Web e Móveis
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

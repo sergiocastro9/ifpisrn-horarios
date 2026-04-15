@@ -1,0 +1,80 @@
+---
+slug: /disciplina/historia_da_fisica
+description: História da Física
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "História da Física",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "História da Física",
+        "size": 1,
+        "teachers": [
+          "Kelvin Lopes de Castro"
+        ],
+        "classroom": "Sala 19",
+        "students": [
+          "Lic. em Física - 9º Período (Noite) M119"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "História da Física",
+        "size": 1,
+        "teachers": [
+          "Kelvin Lopes de Castro"
+        ],
+        "classroom": "Sala 19",
+        "students": [
+          "Lic. em Física - 9º Período (Noite) M119"
+        ],
+        "time": "19:00 - 21:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# História da Física
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>
