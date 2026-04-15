@@ -120,24 +120,32 @@ body {
   opacity: 0.9;
 }
 
-/* Make the TOP sidebar menu a flex column so the campus section can stay at the bottom on tall screens */
-.theme-doc-sidebar-menu.menu__list {
+/* Sidebar: make the docs menu fill height so the campus section can stick to the bottom */
+.theme-doc-sidebar-container nav.menu.thin-scrollbar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.theme-doc-sidebar-container nav.menu.thin-scrollbar > ul.menu__list {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
   min-height: 100%;
 }
 
-/* Ensure the menu container fills the viewport, so margin-top:auto can push items to the bottom */
-nav.menu.thin-scrollbar {
+/* Mobile navbar sidebar uses a different container */
+.navbar-sidebar nav.menu.thin-scrollbar {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-/* Make the <ul> fill available height inside the nav */
-nav.menu.thin-scrollbar > ul.theme-doc-sidebar-menu.menu__list {
+.navbar-sidebar nav.menu.thin-scrollbar > ul.menu__list {
+  display: flex;
+  flex-direction: column;
   flex: 1 1 auto;
+  min-height: 100%;
 }
 
 /* Schedule items (Turma/Professor/Sala dropdown only) with icons (avoid applying to each item) */
