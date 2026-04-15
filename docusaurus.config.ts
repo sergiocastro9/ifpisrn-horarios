@@ -2,6 +2,41 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+type SiteVersionRow = {
+  id: string;
+  version: string;
+  start: string;
+  end?: string | null;
+};
+
+function formatIsoToBr(iso: string) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(iso));
+  if (!match) return iso;
+  const [, y, m, d] = match;
+  return `${d}/${m}/${y}`;
+}
+
+function getVersionsDropdownItems() {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const data = require('./src/data/siteVersions.json') as {
+    current: SiteVersionRow;
+    history: SiteVersionRow[];
+  };
+
+  return [
+    {
+      label: `${data.current.version} (Atual)`,
+      to: '/docs/intro',
+    },
+    ...data.history.map((row) => ({
+      label: row.end
+        ? `${row.version} (até ${formatIsoToBr(row.end)})`
+        : row.version,
+      to: `/docs/${row.id}/intro`,
+    })),
+  ];
+}
+
 const config: Config = {
   title: 'Quadro de Horários do IFPI - Campus São Raimundo Nonato',
   tagline:
@@ -56,6 +91,11 @@ const config: Config = {
           docId: 'intro',
           position: 'left',
           label: 'Quadro de Horários',
+        },
+        {
+          label: 'Versões',
+          position: 'left',
+          items: getVersionsDropdownItems(),
         },
         {
           type: 'search',

@@ -14,7 +14,8 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
-    "generate:fet:csv": "node scripts/fet-csv-to-mdx.mjs"
+    "generate:fet:csv": "node scripts/fet-csv-to-mdx.mjs",
+    "bump:timetable:version": "node scripts/bump-timetable-version.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "^3.10.0",
