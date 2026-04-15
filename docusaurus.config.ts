@@ -37,6 +37,15 @@ function getVersionsDropdownItems() {
   ];
 }
 
+function getSearchExcludeRoutesForOldVersions() {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const data = require('./src/data/siteVersions.json') as {
+    history: SiteVersionRow[];
+  };
+  const history = Array.isArray(data.history) ? data.history : [];
+  return history.map((row) => `docs/${row.id}/**`);
+}
+
 const config: Config = {
   title: 'Quadro de Horários do IFPI - Campus São Raimundo Nonato',
   tagline:
@@ -171,7 +180,9 @@ const config: Config = {
       require.resolve('docusaurus-lunr-search'),
       {
         languages: ['pt'],
-        disableVersioning: true,
+        // Search should point to the current timetable by default.
+        // Older timetable versions remain accessible via the Versions dropdown.
+        excludeRoutes: getSearchExcludeRoutesForOldVersions(),
       },
     ],
   ],
