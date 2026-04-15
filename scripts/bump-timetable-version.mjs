@@ -1,4 +1,4 @@
-import { readFile, writeFile } from 'node:fs/promises'
+import { readFile, writeFile, rm } from 'node:fs/promises'
 import { spawn } from 'node:child_process'
 import path from 'node:path'
 
@@ -56,6 +56,125 @@ async function runNpmDocusaurusVersion(versionName) {
 async function readJson(filePath) {
   const raw = await readFile(filePath, 'utf8')
   return JSON.parse(raw)
+}
+
+async function removeDirIfExists(dirPath) {
+  try {
+    await rm(dirPath, { recursive: true, force: true })
+  } catch {
+    // ignore
+  }
+}
+
+function buildCampusSidebarItems() {
+  return [
+    {
+      type: 'html',
+      value: '<div class="sidebarFlexSpacerInner"></div>',
+      defaultStyle: true,
+      className: 'sidebarFlexSpacer',
+    },
+    {
+      type: 'html',
+      value: '<div class="sidebarSectionTitle">INFORMAÇÕES DO CAMPUS</div>',
+      defaultStyle: true,
+      className: 'campusInfoGroupTitle',
+    },
+    {
+      type: 'link',
+      label: 'Administração',
+      href: '/docs/campus/administracao',
+      className: 'campusInfoItem campusInfoItem--administracao',
+    },
+    {
+      type: 'category',
+      label: 'Cursos',
+      collapsible: true,
+      collapsed: true,
+      className: 'campusInfoItem campusInfoItem--cursos',
+      items: [
+        { type: 'html', value: '<div class="sidebarSectionHeading">TÉCNICOS</div>', defaultStyle: true },
+        { type: 'link', label: 'Administração (Integrado)', href: '/docs/cursos/tecnico-administracao-integrado' },
+        { type: 'link', label: 'Eventos (Integrado)', href: '/docs/cursos/tecnico-eventos-integrado' },
+        { type: 'link', label: 'Informática (Integrado)', href: '/docs/cursos/tecnico-informatica-integrado' },
+        { type: 'link', label: 'Administração (Subsequente)', href: '/docs/cursos/tecnico-administracao-subsequente' },
+        { type: 'link', label: 'Gastronomia (Subsequente)', href: '/docs/cursos/tecnico-gastronomia-subsequente' },
+        { type: 'link', label: 'Guia de Turismo (Subsequente)', href: '/docs/cursos/tecnico-guia-de-turismo-subsequente' },
+        {
+          type: 'link',
+          label: 'Serviço de Restaurante e Bar (Subsequente)',
+          href: '/docs/cursos/tecnico-servico-de-restaurante-e-bar',
+        },
+        { type: 'link', label: 'Gastronomia (PROEJA)', href: '/docs/cursos/tecnico-gastronomia-proeja' },
+        { type: 'html', value: '<div class="sidebarSectionHeading">LICENCIATURA</div>', defaultStyle: true },
+        { type: 'link', label: 'Licenciatura em Física', href: '/docs/cursos/licenciatura-fisica' },
+        { type: 'link', label: 'Licenciatura em Matemática', href: '/docs/cursos/licenciatura-matematica' },
+        { type: 'html', value: '<div class="sidebarSectionHeading">TECNOLOGIA</div>', defaultStyle: true },
+        { type: 'link', label: 'Gastronomia', href: '/docs/cursos/tecnologia-gastronomia' },
+        { type: 'link', label: 'Sistemas para Internet', href: '/docs/cursos/tecnologia-sistemas-para-internet' },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Contato',
+      collapsible: true,
+      collapsed: true,
+      className: 'campusInfoItem campusInfoItem--contato',
+      items: [
+        {
+          type: 'html',
+          value:
+            '<div class="campusInfoSubItem campusInfoSubItem--telefone"><span class="campusInfoSubItem__label">Telefone</span><span class="campusInfoSubItem__value">(89) 2221-9904</span></div>',
+          defaultStyle: true,
+        },
+        {
+          type: 'html',
+          value:
+            '<div class="campusInfoSubItem campusInfoSubItem--endereco"><span class="campusInfoSubItem__label">Endereço</span><span class="campusInfoSubItem__value">BR 020, S/N, Bairro Primavera, São Raimundo Nonato - PI, CEP 64770-000</span></div>',
+          defaultStyle: true,
+        },
+      ],
+    },
+  ]
+}
+
+function isCampusSidebarItem(item) {
+  if (!item || typeof item !== 'object') return false
+  if (item.className && String(item.className).includes('campusInfo')) return true
+  if (item.className === 'sidebarFlexSpacer') return true
+
+  if (item.type === 'html' && typeof item.value === 'string') {
+    if (item.value.includes('sidebarFlexSpacerInner')) return true
+    if (item.value.includes('INFORMAÇÕES DO CAMPUS')) return true
+    if (item.value.includes('INFORMA') && item.value.includes('DO CAMPUS')) return true
+  }
+
+  if (item.type === 'doc' && typeof item.id === 'string') {
+    return item.id.startsWith('campus/') || item.id.startsWith('cursos/')
+  }
+
+  if (item.type === 'link' && typeof item.href === 'string') {
+    return item.href.startsWith('/docs/campus/') || item.href.startsWith('/docs/cursos/')
+  }
+
+  return false
+}
+
+async function patchVersionedSidebarToUseNonVersionedCampus(versionName) {
+  const sidebarPath = path.join(process.cwd(), 'versioned_sidebars', `version-${versionName}-sidebars.json`)
+  let json
+  try {
+    json = await readJson(sidebarPath)
+  } catch {
+    return
+  }
+
+  if (!Array.isArray(json.schedulelSidebar)) return
+
+  json.schedulelSidebar = json.schedulelSidebar.filter((item) => !isCampusSidebarItem(item))
+  json.schedulelSidebar.push(...buildCampusSidebarItems())
+
+  await writeFile(sidebarPath, JSON.stringify(json, null, 2) + '\n', 'utf8')
 }
 
 async function main() {
@@ -125,6 +244,14 @@ async function main() {
 
     if (!Array.isArray(existingVersions) || !existingVersions.includes(oldCurrentVersion)) {
       await runNpmDocusaurusVersion(oldCurrentVersion)
+
+      // Keep "campus" content non-versioned:
+      // - Remove it from the newly created snapshot docs
+      // - Ensure the snapshot sidebar still shows campus links pointing to the non-versioned pages
+      const snapshotRoot = path.join(process.cwd(), 'versioned_docs', `version-${oldCurrentVersion}`)
+      await removeDirIfExists(path.join(snapshotRoot, 'campus'))
+      await removeDirIfExists(path.join(snapshotRoot, 'cursos'))
+      await patchVersionedSidebarToUseNonVersionedCampus(oldCurrentVersion)
     }
   }
 
