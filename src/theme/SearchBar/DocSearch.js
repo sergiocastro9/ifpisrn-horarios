@@ -92,6 +92,42 @@ class DocSearch {
     });
   }
 
+  positionDropdown() {
+    try {
+      if (!this.input || !this.input[0] || typeof window === 'undefined') return;
+      if (window.matchMedia && window.matchMedia('(max-width: 600px)').matches) return;
+
+      const menu = document.querySelector('.algolia-autocomplete .ds-dropdown-menu');
+      if (!menu) return;
+
+      const inputEl = this.input[0];
+      const inputRect = inputEl.getBoundingClientRect();
+      const viewportWidth = window.innerWidth || document.documentElement.clientWidth || 0;
+      const viewportHeight = window.innerHeight || document.documentElement.clientHeight || 0;
+
+      const gutter = 8;
+      const desiredWidth = Math.min(600, Math.max(0, viewportWidth - gutter * 2));
+      const top = Math.round(inputRect.bottom + 6);
+
+      let left = Math.round(inputRect.right - desiredWidth);
+      left = Math.max(gutter, Math.min(left, viewportWidth - desiredWidth - gutter));
+
+      menu.classList.add('ds-dropdown-menu--fixed');
+      menu.style.position = 'fixed';
+      menu.style.top = `${top}px`;
+      menu.style.left = `${left}px`;
+      menu.style.right = 'auto';
+      menu.style.margin = '0';
+      menu.style.width = `${desiredWidth}px`;
+      menu.style.maxWidth = `${desiredWidth}px`;
+      menu.style.maxHeight = `${Math.max(200, viewportHeight - top - gutter)}px`;
+      menu.style.overflow = 'auto';
+      menu.style.zIndex = '9999';
+    } catch (e) {
+      // ignore: positioning should never break search
+    }
+  }
+
   static getInputFromSelector(selector) {
     const input = $(selector).filter('input');
     return input.length ? $(input[0]) : null;
@@ -191,8 +227,8 @@ class DocSearch {
 
   handleShown(input) {
     input.attr('aria-expanded', true);
+    requestAnimationFrame(() => this.positionDropdown());
   }
 }
 
 export default DocSearch;
-
