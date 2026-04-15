@@ -135,6 +135,11 @@ nav.menu.thin-scrollbar {
   height: 100%;
 }
 
+/* Make the <ul> fill available height inside the nav */
+nav.menu.thin-scrollbar > ul.theme-doc-sidebar-menu.menu__list {
+  flex: 1 1 auto;
+}
+
 /* Schedule items (Turma/Professor/Sala dropdown only) with icons (avoid applying to each item) */
 .scheduleItem > .menu__list-item-collapsible > a.menu__link--sublist {
   display: flex;

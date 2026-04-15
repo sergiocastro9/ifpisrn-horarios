@@ -50,6 +50,7 @@ const config: Config = {
   tagline:
     '"Com organização e tempo, acha-se o segredo de fazer tudo e bem feito." - Pitágoras',
   favicon: 'img/favicon.gif',
+  staticDirectories: ['static', 'attachments'],
 
   url: 'https://profsergiocastro.github.io/',
   baseUrl: '/ifpisrn-horarios/',
