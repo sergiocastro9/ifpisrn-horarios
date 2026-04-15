@@ -6,6 +6,7 @@
     "docusaurus": "docusaurus",
     "dev": "docusaurus start",
     "start": "npm run build && docusaurus serve",
+    "prebuild": "node scripts/sync-attachments.mjs",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",

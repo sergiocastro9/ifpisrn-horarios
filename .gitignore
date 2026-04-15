@@ -15,6 +15,11 @@
 /build11
 /build12
 /build13
+/build14
+/build15
+
+# Generated from /attachments by prebuild script
+/static/attachments/
 
 # Generated files
 .docusaurus
