@@ -77,7 +77,7 @@ class DocSearch {
 
     this.autocomplete.on(
       'autocomplete:shown',
-      this.handleShown.bind(null, this.input),
+      this.handleShown.bind(this, this.input),
     );
 
     if (enhancedSearchInput) {
