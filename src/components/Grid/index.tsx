@@ -93,7 +93,6 @@ export function Grid({ title, time, weekClasses, textFooter }: GridProps) {
       },
       timeChanged: [],
       weekClassesChanged: [],
-      viewsChanged: [],
     },
     (initialState) => {
       const storedStateAsJSON = localStorage.getItem('settings-of-time')
@@ -114,7 +113,7 @@ export function Grid({ title, time, weekClasses, textFooter }: GridProps) {
       const newWeekClasses = cloneData(weekClassesPrepared)
       const timetableViewInitial = settings.timetableView
 
-      const { timeChanged, weekClassesChanged, views } = reduceTimetable({
+      const { timeChanged, weekClassesChanged } = reduceTimetable({
         weekClasses: newWeekClasses,
         time: timeInitial,
         timetableView: timetableViewInitial,
@@ -125,11 +124,10 @@ export function Grid({ title, time, weekClasses, textFooter }: GridProps) {
         settings,
         weekClassesChanged,
         timeChanged,
-        viewsChanged: views,
       }
     },
   )
-  const { settings, timeChanged, weekClassesChanged, viewsChanged } = settingsState
+  const { settings, timeChanged, weekClassesChanged } = settingsState
   const { timetableView, isMenuFixed, timetableColor } = settings
 
   function reduceGrid(newTimetableView: TimetableViewType) {
@@ -180,50 +178,12 @@ export function Grid({ title, time, weekClasses, textFooter }: GridProps) {
         timeInitial,
       }}
     >
-      {timetableView === 'superCondensed' && viewsChanged.length > 1 ? (
-        <div ref={gridRef as any}>
-          {viewsChanged.map((view, index) => {
-            const segmentRowsSize = view.timeChanged.reduce((acc, elemento) => {
-              return (acc += ` ${elemento.size}fr`)
-            }, '')
-
-            return (
-              <GridContext.Provider
-                // eslint-disable-next-line react/no-array-index-key
-                key={index}
-                value={{
-                  title: safeTitle,
-                  timeChanged: view.timeChanged,
-                  weekClassesChanged: view.weekClassesChanged,
-                  timetableView,
-                  timetableColor,
-                  isMenuFixed,
-                  rowsSize: segmentRowsSize,
-                  gridRef,
-                  modifyMenu,
-                  reduceGrid,
-                  colorizeGrid,
-                  weekClassesInitial: cloneData(weekClassesPrepared),
-                  timeInitial,
-                }}
-              >
-                <GridContainer $gridRows={setGridTemplateRows(textFooter)}>
-                  <Header />
-                  <Sidebar showSettings={index === 0} />
-                  <Timetable />
-                </GridContainer>
-              </GridContext.Provider>
-            )
-          })}
-        </div>
-      ) : (
-        <GridContainer $gridRows={setGridTemplateRows(textFooter)} ref={gridRef}>
-          <Header />
-          <Sidebar />
-          <Timetable />
-          {/* {textFooter ? <Footer textFooter={textFooter} /> : ''} */}
-        </GridContainer>
-      )}
+      <GridContainer $gridRows={setGridTemplateRows(textFooter)} ref={gridRef}>
+        <Header />
+        <Sidebar />
+        <Timetable />
+        {/* {textFooter ? <Footer textFooter={textFooter} /> : ''} */}
+      </GridContainer>
     </GridContext.Provider>
   )
 }
