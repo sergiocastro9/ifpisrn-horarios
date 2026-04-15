@@ -18,7 +18,7 @@ export interface SidebarProps {
   modal: ModalSettingsProps
 }
 
-export function Sidebar() {
+export function Sidebar({ showSettings = true }: { showSettings?: boolean } = {}) {
   const { timeChanged } = useContext(GridContext)
 
   let timeOffSet = 2
@@ -51,7 +51,7 @@ export function Sidebar() {
   return (
     <Container $rowsSize={`${rowsSize}`}>
       <Cell $gridArea="1 / 1 / 2 / 2" className="sidebar">
-        <ModalSettings downloadScreenshot={downloadScreenshot} />
+        {showSettings ? <ModalSettings downloadScreenshot={downloadScreenshot} /> : null}
       </Cell>
       {timeChanged.map((timeEl) => (
         <Cell

@@ -34,6 +34,7 @@ interface SettingsState {
   settings: Settings
   weekClassesChanged: Days[]
   timeChanged: Time[]
+  viewsChanged: Array<{ weekClassesChanged: Days[]; timeChanged: Time[] }>
 }
 
 export function settingsReducer(state: SettingsState, action: any) {
@@ -63,7 +64,7 @@ export function settingsReducer(state: SettingsState, action: any) {
       const time = action.payload.timeInitial
       const weekClasses = action.payload.weekClassesInitial
 
-      const { weekClassesChanged, timeChanged } = reduceTimetable({
+      const { weekClassesChanged, timeChanged, views } = reduceTimetable({
         time,
         weekClasses,
         timetableView,
@@ -72,6 +73,7 @@ export function settingsReducer(state: SettingsState, action: any) {
       return {
         timeChanged,
         weekClassesChanged,
+        viewsChanged: views,
         settings: {
           ...state.settings,
           timetableView,
