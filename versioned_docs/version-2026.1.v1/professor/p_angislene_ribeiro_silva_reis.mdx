@@ -1,0 +1,119 @@
+---
+slug: /professor/angislene_ribeiro_silva_reis
+description: Angislene Ribeiro Silva Reis
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Angislene Ribeiro Silva Reis",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Língua Portuguesa",
+        "size": 1,
+        "teachers": [
+          "Angislene Ribeiro Silva Reis"
+        ],
+        "classroom": "Sala 20",
+        "students": [
+          "Téc. em Informática (Integrado) - 3º INFO (Tarde)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      },
+      {
+        "subject": "Língua Portuguesa",
+        "size": 1,
+        "teachers": [
+          "Angislene Ribeiro Silva Reis"
+        ],
+        "classroom": "Sala 18",
+        "students": [
+          "Téc. em Eventos (Integrado) - 3º EVENTOS (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Língua Portuguesa",
+        "size": 1,
+        "teachers": [
+          "Angislene Ribeiro Silva Reis"
+        ],
+        "classroom": "Sala 20",
+        "students": [
+          "Téc. em Informática (Integrado) - 3º INFO (Tarde)"
+        ],
+        "time": "08:30 - 09:30",
+        "color": ""
+      },
+      {
+        "subject": "Língua Portuguesa",
+        "size": 1,
+        "teachers": [
+          "Angislene Ribeiro Silva Reis"
+        ],
+        "classroom": "Sala 18",
+        "students": [
+          "Téc. em Eventos (Integrado) - 3º EVENTOS (Tarde)"
+        ],
+        "time": "13:30 - 14:30",
+        "color": ""
+      },
+      {
+        "subject": "Leitura e Produção Textual",
+        "size": 1,
+        "teachers": [
+          "Angislene Ribeiro Silva Reis"
+        ],
+        "classroom": "Sala 22",
+        "students": [
+          "Lic. em Matemática - 1º Período (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Angislene Ribeiro Silva Reis
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

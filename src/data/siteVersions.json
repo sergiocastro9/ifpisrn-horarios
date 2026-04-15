@@ -1,9 +1,15 @@
 {
   "current": {
     "id": "current",
-    "version": "2026.1.v1",
-    "start": "2026-04-14"
+    "version": "2026.1.v2",
+    "start": "2026-03-11"
   },
-  "history": []
+  "history": [
+    {
+      "id": "2026.1.v1",
+      "version": "2026.1.v1",
+      "start": "2026-03-01",
+      "end": "2026-03-10"
+    }
+  ]
 }
-

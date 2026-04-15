@@ -1,0 +1,200 @@
+---
+slug: /sala/laboratorio_de_artes
+description: Laboratório de Artes
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Laboratório de Artes",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Educação Ambiental",
+        "size": 1,
+        "teachers": [
+          "Caroline Costa Lucas"
+        ],
+        "classroom": "Laboratório de Artes",
+        "students": [
+          "Téc. Gastronomia - 2º Período (Tarde)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      },
+      {
+        "subject": "Empreendedorismo e Marketing",
+        "size": 1,
+        "teachers": [
+          "Clarissa Dias de Macedo Silva"
+        ],
+        "classroom": "Laboratório de Artes",
+        "students": [
+          "Téc. Gastronomia - 2º Período (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Panificação e Confeitaria",
+        "size": 1,
+        "teachers": [
+          "Evanir de Araujo Santos"
+        ],
+        "classroom": "Laboratório de Artes",
+        "students": [
+          "Téc. Gastronomia - 2º Período (Tarde)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      },
+      {
+        "subject": "Panificação e Confeitaria",
+        "size": 1,
+        "teachers": [
+          "Evanir de Araujo Santos"
+        ],
+        "classroom": "Laboratório de Artes",
+        "students": [
+          "Téc. Gastronomia - 2º Período (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Cozinha Brasileira",
+        "size": 1,
+        "teachers": [
+          "Gabriela Brito de Lima Silva"
+        ],
+        "classroom": "Laboratório de Artes",
+        "students": [
+          "Téc. Gastronomia - 2º Período (Tarde)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      },
+      {
+        "subject": "Cozinha Brasileira",
+        "size": 1,
+        "teachers": [
+          "Gabriela Brito de Lima Silva"
+        ],
+        "classroom": "Laboratório de Artes",
+        "students": [
+          "Téc. Gastronomia - 2º Período (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      },
+      {
+        "subject": "TCC II",
+        "size": 1,
+        "teachers": [
+          "Jessica Pinheiro Mendes Sampaio"
+        ],
+        "classroom": "Laboratório de Artes",
+        "students": [
+          "Tecnologia em Gastronomia - 6º Período (Noite)"
+        ],
+        "time": "18:00 - 21:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Cozinha Internacional",
+        "size": 1,
+        "teachers": [
+          "Evanir de Araujo Santos"
+        ],
+        "classroom": "Laboratório de Artes",
+        "students": [
+          "Téc. Gastronomia - 2º Período (Tarde)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      },
+      {
+        "subject": "Cozinha Internacional",
+        "size": 1,
+        "teachers": [
+          "Evanir de Araujo Santos"
+        ],
+        "classroom": "Laboratório de Artes",
+        "students": [
+          "Téc. Gastronomia - 2º Período (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Gestão de Unidades Produtoras de Refeições",
+        "size": 1,
+        "teachers": [
+          "Andryelle Alves da Silva"
+        ],
+        "classroom": "Laboratório de Artes",
+        "students": [
+          "Téc. Gastronomia - 2º Período (Tarde)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      },
+      {
+        "subject": "Serviço de Sala e Bar",
+        "size": 1,
+        "teachers": [
+          "Andryelle Alves da Silva"
+        ],
+        "classroom": "Laboratório de Artes",
+        "students": [
+          "Téc. Gastronomia - 2º Período (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Laboratório de Artes
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

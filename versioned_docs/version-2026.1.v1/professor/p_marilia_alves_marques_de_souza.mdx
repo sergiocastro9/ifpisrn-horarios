@@ -1,0 +1,93 @@
+---
+slug: /professor/marilia_alves_marques_de_souza
+description: Marilia Alves Marques de Souza
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Marilia Alves Marques de Souza",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Francês Instrumental",
+        "size": 1,
+        "teachers": [
+          "Marilia Alves Marques de Souza"
+        ],
+        "classroom": "Sala 21",
+        "students": [
+          "Tecnologia em Gastronomia - 3º Período (Tarde) A"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Cozinha Fria",
+        "size": 1,
+        "teachers": [
+          "Marilia Alves Marques de Souza"
+        ],
+        "classroom": "Sala 21",
+        "students": [
+          "Tecnologia em Gastronomia - 3º Período (Tarde)"
+        ],
+        "time": "13:00 - 16:00",
+        "color": ""
+      },
+      {
+        "subject": "Cozinha Fria",
+        "size": 1,
+        "teachers": [
+          "Marilia Alves Marques de Souza"
+        ],
+        "classroom": "Sala 08",
+        "students": [
+          "Téc. Gastronomia (PROEJA) - 5º Período (Noite)"
+        ],
+        "time": "19:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Marilia Alves Marques de Souza
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

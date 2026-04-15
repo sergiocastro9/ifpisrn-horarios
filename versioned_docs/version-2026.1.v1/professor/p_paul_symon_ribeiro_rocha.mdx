@@ -1,0 +1,93 @@
+---
+slug: /professor/paul_symon_ribeiro_rocha
+description: Paul Symon Ribeiro Rocha
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Paul Symon Ribeiro Rocha",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Design de Interfaces para Web e Móveis",
+        "size": 1,
+        "teachers": [
+          "Paul Symon Ribeiro Rocha"
+        ],
+        "classroom": "Sala 13",
+        "students": [
+          "Sistemas para Internet - 1° Período"
+        ],
+        "time": "20:00 - 21:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Design de Interfaces para Web e Móveis",
+        "size": 1,
+        "teachers": [
+          "Paul Symon Ribeiro Rocha"
+        ],
+        "classroom": "Sala 13",
+        "students": [
+          "Sistemas para Internet - 1° Período"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      },
+      {
+        "subject": "Metodologia Científica",
+        "size": 1,
+        "teachers": [
+          "Paul Symon Ribeiro Rocha"
+        ],
+        "classroom": "Sala 10",
+        "students": [
+          "Sistemas para Internet - 3° Período"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Paul Symon Ribeiro Rocha
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

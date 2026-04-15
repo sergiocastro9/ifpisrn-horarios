@@ -1,0 +1,133 @@
+---
+slug: /professor/ciro_matheus_coelho_arrais
+description: Ciro Matheus Coelho Arrais
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Ciro Matheus Coelho Arrais",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Introdução à Informática",
+        "size": 1,
+        "teachers": [
+          "Ciro Matheus Coelho Arrais"
+        ],
+        "classroom": "Sala 01",
+        "students": [
+          "Téc. em Eventos (Integrado) - 1º EVENTOS (Manhã)"
+        ],
+        "time": "10:00 - 12:00",
+        "color": ""
+      },
+      {
+        "subject": "Introdução à Informática",
+        "size": 1,
+        "teachers": [
+          "Ciro Matheus Coelho Arrais"
+        ],
+        "classroom": "Sala 15",
+        "students": [
+          "Téc. em Eventos (Integrado) - 1º EVENTOS (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Projeto Integrador II",
+        "size": 1,
+        "teachers": [
+          "Ciro Matheus Coelho Arrais"
+        ],
+        "classroom": "Sala 16",
+        "students": [
+          "Téc. em Informática (Integrado) - 2º INFO (Tarde)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Fundamentos da Informática e Aplicações",
+        "size": 1,
+        "teachers": [
+          "Ciro Matheus Coelho Arrais"
+        ],
+        "classroom": "Sala 14",
+        "students": [
+          "Téc. em Informática (Integrado) - 1º INFO (Manhã)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      },
+      {
+        "subject": "Redes de Computadores I",
+        "size": 1,
+        "teachers": [
+          "Ciro Matheus Coelho Arrais"
+        ],
+        "classroom": "Sala 10",
+        "students": [
+          "Sistemas para Internet - 3° Período"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      },
+      {
+        "subject": "Informática Aplicada à Gastronomia",
+        "size": 1,
+        "teachers": [
+          "Ciro Matheus Coelho Arrais"
+        ],
+        "classroom": "Sala 14",
+        "students": [
+          "Tecnologia em Gastronomia - 1º Período (Noite)"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Ciro Matheus Coelho Arrais
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

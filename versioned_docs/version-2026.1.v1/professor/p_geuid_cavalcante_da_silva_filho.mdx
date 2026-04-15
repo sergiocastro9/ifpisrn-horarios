@@ -1,0 +1,134 @@
+---
+slug: /professor/geuid_cavalcante_da_silva_filho
+description: Geuid Cavalcante da Silva Filho
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Geuid Cavalcante da Silva Filho",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Profissionalização Docente",
+        "size": 1,
+        "teachers": [
+          "Geuid Cavalcante da Silva Filho"
+        ],
+        "classroom": "Sala 22",
+        "students": [
+          "Lic. em Matemática - 1º Período (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      },
+      {
+        "subject": "Profissionalização Docente",
+        "size": 1,
+        "teachers": [
+          "Geuid Cavalcante da Silva Filho"
+        ],
+        "classroom": "Sala 22",
+        "students": [
+          "Lic. em Física - 1º Período (Noite) M725"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      },
+      {
+        "subject": "Educação das Relações Étnico-Raciais",
+        "size": 1,
+        "teachers": [
+          "Geuid Cavalcante da Silva Filho"
+        ],
+        "classroom": "Indefinido",
+        "students": [
+          "Lic. em Física - 5º Período (Noite) M725",
+          "Lic. em Matemática - 7º Período (Noite)"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Profissionalização Docente",
+        "size": 1,
+        "teachers": [
+          "Geuid Cavalcante da Silva Filho"
+        ],
+        "classroom": "Sala 22",
+        "students": [
+          "Lic. em Física - 1º Período (Noite) M725"
+        ],
+        "time": "18:00 - 19:00",
+        "color": ""
+      },
+      {
+        "subject": "Educação Profissional e Tecnológica",
+        "size": 1,
+        "teachers": [
+          "Geuid Cavalcante da Silva Filho"
+        ],
+        "classroom": "Sala 18",
+        "students": [
+          "Lic. em Matemática - 5º Período (Noite)"
+        ],
+        "time": "19:00 - 21:00",
+        "color": ""
+      },
+      {
+        "subject": "Educação das Relações Étnico-Raciais",
+        "size": 1,
+        "teachers": [
+          "Geuid Cavalcante da Silva Filho"
+        ],
+        "classroom": "Indefinido",
+        "students": [
+          "Lic. em Física - 5º Período (Noite) M725",
+          "Lic. em Matemática - 7º Período (Noite)"
+        ],
+        "time": "21:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Geuid Cavalcante da Silva Filho
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

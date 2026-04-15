@@ -1,0 +1,67 @@
+---
+slug: /turma/tecnologia_em_gastronomia_3_periodo_tarde_b
+description: Tecnologia em Gastronomia - 3º Período (Tarde) B
+sidebar_label: "3º Período (Tarde) B"
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Tecnologia em Gastronomia - 3º Período (Tarde) B",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Gastrotecnia",
+        "size": 1,
+        "teachers": [
+          "Gabriela Brito de Lima Silva"
+        ],
+        "classroom": "Sala 21",
+        "students": [
+          "Tecnologia em Gastronomia - 3º Período (Tarde) B"
+        ],
+        "time": "15:00 - 17:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Tecnologia em Gastronomia - 3º Período (Tarde) B
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

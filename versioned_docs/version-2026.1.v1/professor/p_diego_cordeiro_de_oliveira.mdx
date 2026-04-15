@@ -1,0 +1,161 @@
+---
+slug: /professor/diego_cordeiro_de_oliveira
+description: Diego Cordeiro de Oliveira
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Diego Cordeiro de Oliveira",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Segurança da Informação",
+        "size": 1,
+        "teachers": [
+          "Diego Cordeiro de Oliveira"
+        ],
+        "classroom": "Sala 20",
+        "students": [
+          "Téc. em Informática (Integrado) - 3º INFO (Tarde)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      },
+      {
+        "subject": "Programação Orientada a Objetos",
+        "size": 1,
+        "teachers": [
+          "Diego Cordeiro de Oliveira"
+        ],
+        "classroom": "Sala 10",
+        "students": [
+          "Sistemas para Internet - 3° Período"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Infraestrutura Computacional e Suporte Técnico",
+        "size": 1,
+        "teachers": [
+          "Diego Cordeiro de Oliveira",
+          "Ricardo Valerio de Oliveira"
+        ],
+        "classroom": "Sala 14",
+        "students": [
+          "Téc. em Informática (Integrado) - 1º INFO (Manhã)"
+        ],
+        "time": "07:30 - 09:30",
+        "color": ""
+      },
+      {
+        "subject": "Segurança da Informação",
+        "size": 1,
+        "teachers": [
+          "Diego Cordeiro de Oliveira"
+        ],
+        "classroom": "Sala 19",
+        "students": [
+          "Téc. em Informática (Integrado) - 3º INFO (Manhã)"
+        ],
+        "time": "10:00 - 12:00",
+        "color": ""
+      },
+      {
+        "subject": "Segurança da Informação",
+        "size": 1,
+        "teachers": [
+          "Diego Cordeiro de Oliveira"
+        ],
+        "classroom": "Sala 20",
+        "students": [
+          "Téc. em Informática (Integrado) - 3º INFO (Tarde)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Segurança da Informação",
+        "size": 1,
+        "teachers": [
+          "Diego Cordeiro de Oliveira"
+        ],
+        "classroom": "Sala 19",
+        "students": [
+          "Téc. em Informática (Integrado) - 3º INFO (Manhã)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      },
+      {
+        "subject": "Robótica",
+        "size": 1,
+        "teachers": [
+          "Diego Cordeiro de Oliveira",
+          "Ricardo Valerio de Oliveira"
+        ],
+        "classroom": "Sala 16",
+        "students": [
+          "Téc. em Informática (Integrado) - 2º INFO (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      },
+      {
+        "subject": "Programação Orientada a Objetos",
+        "size": 1,
+        "teachers": [
+          "Diego Cordeiro de Oliveira"
+        ],
+        "classroom": "Sala 10",
+        "students": [
+          "Sistemas para Internet - 3° Período"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Diego Cordeiro de Oliveira
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

@@ -1,0 +1,94 @@
+---
+slug: /professor/gerlane_dantas_da_silva
+description: Gerlane Dantas da Silva
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Gerlane Dantas da Silva",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Habilidades e Técnicas Culinárias I",
+        "size": 1,
+        "teachers": [
+          "Gerlane Dantas da Silva"
+        ],
+        "classroom": "Sala 14",
+        "students": [
+          "Tecnologia em Gastronomia - 1º Período (Noite)"
+        ],
+        "time": "18:00 - 21:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Fundamentos e Metodologia de Extensão no Ensino Superior",
+        "size": 1,
+        "teachers": [
+          "Gerlane Dantas da Silva"
+        ],
+        "classroom": "Sala 14",
+        "students": [
+          "Tecnologia em Gastronomia - 1º Período (Noite)"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Enogastronomia",
+        "size": 1,
+        "teachers": [
+          "Gerlane Dantas da Silva"
+        ],
+        "classroom": "Sala 07",
+        "students": [
+          "Téc. Gastronomia (PROEJA) - 4º Período (Noite)"
+        ],
+        "time": "19:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Gerlane Dantas da Silva
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

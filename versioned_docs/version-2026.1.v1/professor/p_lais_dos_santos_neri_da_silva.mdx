@@ -1,0 +1,137 @@
+---
+slug: /professor/lais_dos_santos_neri_da_silva
+description: Lais dos Santos Neri da Silva
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Lais dos Santos Neri da Silva",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Biologia",
+        "size": 1,
+        "teachers": [
+          "Lais dos Santos Neri da Silva"
+        ],
+        "classroom": "Sala 19",
+        "students": [
+          "Téc. em Informática (Integrado) - 3º INFO (Manhã)"
+        ],
+        "time": "07:30 - 09:30",
+        "color": ""
+      },
+      {
+        "subject": "Introdução às Ciências da Natureza",
+        "size": 1,
+        "teachers": [
+          "Cecilia Santos Silva",
+          "Kelvin Lopes de Castro",
+          "Lais dos Santos Neri da Silva"
+        ],
+        "classroom": "Sala 22",
+        "students": [
+          "Lic. em Física - 1º Período (Noite) M725"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Biologia",
+        "size": 1,
+        "teachers": [
+          "Lais dos Santos Neri da Silva"
+        ],
+        "classroom": "Sala 17",
+        "students": [
+          "Téc. em Administração (Integrado) - 3º ADM (Manhã)"
+        ],
+        "time": "07:30 - 09:30",
+        "color": ""
+      },
+      {
+        "subject": "Biologia",
+        "size": 1,
+        "teachers": [
+          "Lais dos Santos Neri da Silva"
+        ],
+        "classroom": "Sala 20",
+        "students": [
+          "Téc. em Informática (Integrado) - 3º INFO (Tarde)"
+        ],
+        "time": "10:00 - 12:00",
+        "color": ""
+      },
+      {
+        "subject": "Introdução às Ciências da Natureza",
+        "size": 1,
+        "teachers": [
+          "Cecilia Santos Silva",
+          "Kelvin Lopes de Castro",
+          "Lais dos Santos Neri da Silva"
+        ],
+        "classroom": "Sala 22",
+        "students": [
+          "Lic. em Física - 1º Período (Noite) M725"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Biologia",
+        "size": 1,
+        "teachers": [
+          "Lais dos Santos Neri da Silva"
+        ],
+        "classroom": "Sala 07",
+        "students": [
+          "Téc. Gastronomia (PROEJA) - 4º Período (Noite)"
+        ],
+        "time": "18:00 - 19:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Lais dos Santos Neri da Silva
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

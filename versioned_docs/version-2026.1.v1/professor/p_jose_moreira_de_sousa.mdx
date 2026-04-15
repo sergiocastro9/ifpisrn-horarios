@@ -1,0 +1,159 @@
+---
+slug: /professor/jose_moreira_de_sousa
+description: Jose Moreira de Sousa
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Jose Moreira de Sousa",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Física",
+        "size": 1,
+        "teachers": [
+          "Jose Moreira de Sousa"
+        ],
+        "classroom": "Sala 14",
+        "students": [
+          "Téc. em Informática (Integrado) - 1º INFO (Manhã)"
+        ],
+        "time": "07:30 - 08:30",
+        "color": ""
+      },
+      {
+        "subject": "Eletiva II",
+        "size": 1,
+        "teachers": [
+          "Jose Moreira de Sousa"
+        ],
+        "classroom": "Sala 19",
+        "students": [
+          "Lic. em Física - 9º Período (Noite) M119"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Eletromagnetismo",
+        "size": 1,
+        "teachers": [
+          "Jose Moreira de Sousa"
+        ],
+        "classroom": "Laboratório de Informática 3 (LAEPE)",
+        "students": [
+          "Lic. em Física - 7º Período (Tarde) M120"
+        ],
+        "time": "14:00 - 16:00",
+        "color": ""
+      },
+      {
+        "subject": "Tópicos de Física",
+        "size": 1,
+        "teachers": [
+          "Jose Moreira de Sousa"
+        ],
+        "classroom": "Sala 01",
+        "students": [
+          "Lic. em Matemática - PPC 2016 (A)"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Física",
+        "size": 1,
+        "teachers": [
+          "Jose Moreira de Sousa"
+        ],
+        "classroom": "Sala 15",
+        "students": [
+          "Téc. em Eventos (Integrado) - 1º EVENTOS (Tarde)"
+        ],
+        "time": "14:30 - 15:30",
+        "color": ""
+      },
+      {
+        "subject": "Eletromagnetismo",
+        "size": 1,
+        "teachers": [
+          "Jose Moreira de Sousa"
+        ],
+        "classroom": "Laboratório de Informática 3 (LAEPE)",
+        "students": [
+          "Lic. em Física - 7º Período (Tarde) M120"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      },
+      {
+        "subject": "Eletiva II",
+        "size": 1,
+        "teachers": [
+          "Jose Moreira de Sousa"
+        ],
+        "classroom": "Sala 19",
+        "students": [
+          "Lic. em Física - 9º Período (Noite) M119"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      },
+      {
+        "subject": "Tópicos de Física",
+        "size": 1,
+        "teachers": [
+          "Jose Moreira de Sousa"
+        ],
+        "classroom": "Sala 01",
+        "students": [
+          "Lic. em Matemática - PPC 2016 (A)"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Jose Moreira de Sousa
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

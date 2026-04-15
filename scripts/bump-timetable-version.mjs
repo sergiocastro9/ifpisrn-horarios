@@ -35,14 +35,15 @@ function addDays(date, deltaDays) {
 }
 
 async function runNpmDocusaurusVersion(versionName) {
-  const npmCmd = process.platform === 'win32' ? 'npm.cmd' : 'npm'
+  const npmCmd = 'npm'
   const args = ['run', 'docusaurus', '--', 'docs:version', versionName]
 
   await new Promise((resolve, reject) => {
     const child = spawn(npmCmd, args, {
       cwd: process.cwd(),
       stdio: 'inherit',
-      shell: false,
+      // On Windows, `npm` is a command shim and needs a shell to run reliably.
+      shell: process.platform === 'win32',
     })
     child.on('error', reject)
     child.on('close', (code) => {
@@ -160,4 +161,3 @@ async function main() {
 }
 
 await main()
-

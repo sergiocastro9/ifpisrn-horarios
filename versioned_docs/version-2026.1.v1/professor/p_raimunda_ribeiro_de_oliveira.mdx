@@ -1,0 +1,134 @@
+---
+slug: /professor/raimunda_ribeiro_de_oliveira
+description: Raimunda Ribeiro de Oliveira
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Raimunda Ribeiro de Oliveira",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Planejamento e Organização da Gestão de Pessoas",
+        "size": 1,
+        "teachers": [
+          "Raimunda Ribeiro de Oliveira"
+        ],
+        "classroom": "Sala 08",
+        "students": [
+          "Téc. em Administração (Subsequente) - Módulo II (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Gestão de Marketing e Vendas",
+        "size": 1,
+        "teachers": [
+          "Raimunda Ribeiro de Oliveira"
+        ],
+        "classroom": "Sala 08",
+        "students": [
+          "Téc. em Administração (Integrado) - 2º ADM (Manhã)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      },
+      {
+        "subject": "Gestão de Marketing e Vendas",
+        "size": 1,
+        "teachers": [
+          "Raimunda Ribeiro de Oliveira"
+        ],
+        "classroom": "Sala 10",
+        "students": [
+          "Téc. em Administração (Integrado) - 2º ADM (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Gestão de Pessoas",
+        "size": 1,
+        "teachers": [
+          "Raimunda Ribeiro de Oliveira"
+        ],
+        "classroom": "Sala 13",
+        "students": [
+          "Téc. em Administração (Integrado) - 1º ADM (Manhã)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Gestão de Marketing e Vendas",
+        "size": 1,
+        "teachers": [
+          "Raimunda Ribeiro de Oliveira"
+        ],
+        "classroom": "Sala 10",
+        "students": [
+          "Téc. em Administração (Integrado) - 2º ADM (Tarde)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      },
+      {
+        "subject": "Gestão de Marketing e Vendas",
+        "size": 1,
+        "teachers": [
+          "Raimunda Ribeiro de Oliveira"
+        ],
+        "classroom": "Sala 08",
+        "students": [
+          "Téc. em Administração (Integrado) - 2º ADM (Manhã)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Raimunda Ribeiro de Oliveira
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

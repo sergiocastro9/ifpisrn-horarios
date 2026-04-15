@@ -1,0 +1,172 @@
+---
+slug: /professor/railton_vieira_dos_santos
+description: Railton Vieira dos Santos
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Railton Vieira dos Santos",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Optativa",
+        "size": 1,
+        "teachers": [
+          "Railton Vieira dos Santos"
+        ],
+        "classroom": "Laboratório de Informática 3 (LAEPE)",
+        "students": [
+          "Lic. em Física - 7º Período (Tarde) M725"
+        ],
+        "time": "13:00 - 14:00",
+        "color": ""
+      },
+      {
+        "subject": "Mecânica II",
+        "size": 1,
+        "teachers": [
+          "Railton Vieira dos Santos"
+        ],
+        "classroom": "Laboratório de Matemática",
+        "students": [
+          "Lic. em Física - 3º Período (Tarde) M725"
+        ],
+        "time": "14:00 - 16:00",
+        "color": ""
+      },
+      {
+        "subject": "Metodologia do Ensino de Física",
+        "size": 1,
+        "teachers": [
+          "Railton Vieira dos Santos"
+        ],
+        "classroom": "Laboratório de Matemática",
+        "students": [
+          "Lic. em Física - 3º Período (Tarde) M725"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      },
+      {
+        "subject": "TCC I",
+        "size": 1,
+        "teachers": [
+          "Railton Vieira dos Santos"
+        ],
+        "classroom": "Sala 20",
+        "students": [
+          "Lic. em Física - 8º Período (Noite) M119"
+        ],
+        "time": "19:00 - 21:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Física",
+        "size": 1,
+        "teachers": [
+          "Railton Vieira dos Santos"
+        ],
+        "classroom": "Sala 08",
+        "students": [
+          "Téc. em Administração (Integrado) - 2º ADM (Manhã)"
+        ],
+        "time": "07:30 - 09:30",
+        "color": ""
+      },
+      {
+        "subject": "Física",
+        "size": 1,
+        "teachers": [
+          "Railton Vieira dos Santos"
+        ],
+        "classroom": "Sala 16",
+        "students": [
+          "Téc. em Informática (Integrado) - 2º INFO (Tarde)"
+        ],
+        "time": "10:00 - 12:00",
+        "color": ""
+      },
+      {
+        "subject": "Optativa",
+        "size": 1,
+        "teachers": [
+          "Railton Vieira dos Santos"
+        ],
+        "classroom": "Laboratório de Informática 3 (LAEPE)",
+        "students": [
+          "Lic. em Física - 7º Período (Tarde) M725"
+        ],
+        "time": "14:00 - 16:00",
+        "color": ""
+      },
+      {
+        "subject": "Mecânica II",
+        "size": 1,
+        "teachers": [
+          "Railton Vieira dos Santos"
+        ],
+        "classroom": "Laboratório de Matemática",
+        "students": [
+          "Lic. em Física - 3º Período (Tarde) M725"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": [
+      {
+        "subject": "TCC I",
+        "size": 1,
+        "teachers": [
+          "Railton Vieira dos Santos"
+        ],
+        "classroom": "Sala 20",
+        "students": [
+          "Lic. em Física - 8º Período (Noite) M119"
+        ],
+        "time": "19:00 - 21:00",
+        "color": ""
+      }
+    ]
+  }
+],
+  alert: ""
+}
+
+# Railton Vieira dos Santos
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

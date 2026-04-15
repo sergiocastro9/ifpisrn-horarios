@@ -1,0 +1,67 @@
+---
+slug: /turma/tecnologia_em_gastronomia_6_periodo_noite
+description: Tecnologia em Gastronomia - 6º Período (Noite)
+sidebar_label: "6º Período (Noite)"
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Tecnologia em Gastronomia - 6º Período (Noite)",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "TCC II",
+        "size": 1,
+        "teachers": [
+          "Jessica Pinheiro Mendes Sampaio"
+        ],
+        "classroom": "Laboratório de Artes",
+        "students": [
+          "Tecnologia em Gastronomia - 6º Período (Noite)"
+        ],
+        "time": "18:00 - 21:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Tecnologia em Gastronomia - 6º Período (Noite)
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

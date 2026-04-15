@@ -1,0 +1,133 @@
+---
+slug: /professor/dann_luciano_de_menezes
+description: Dann Luciano de Menezes
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Dann Luciano de Menezes",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Práticas de Extensão II",
+        "size": 1,
+        "teachers": [
+          "Dann Luciano de Menezes"
+        ],
+        "classroom": "Sala 10",
+        "students": [
+          "Sistemas para Internet - 3° Período"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      },
+      {
+        "subject": "Algoritmos e Lógica de Programação",
+        "size": 1,
+        "teachers": [
+          "Dann Luciano de Menezes"
+        ],
+        "classroom": "Sala 13",
+        "students": [
+          "Sistemas para Internet - 1° Período"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Algoritmos e Lógica de Programação",
+        "size": 1,
+        "teachers": [
+          "Dann Luciano de Menezes"
+        ],
+        "classroom": "Sala 13",
+        "students": [
+          "Sistemas para Internet - 1° Período"
+        ],
+        "time": "19:00 - 20:00",
+        "color": ""
+      },
+      {
+        "subject": "Desenvolvimento Web I",
+        "size": 1,
+        "teachers": [
+          "Dann Luciano de Menezes"
+        ],
+        "classroom": "Sala 10",
+        "students": [
+          "Sistemas para Internet - 3° Período"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Algoritmos e Lógica de Programação",
+        "size": 1,
+        "teachers": [
+          "Dann Luciano de Menezes"
+        ],
+        "classroom": "Sala 13",
+        "students": [
+          "Sistemas para Internet - 1° Período"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      },
+      {
+        "subject": "Desenvolvimento Web I",
+        "size": 1,
+        "teachers": [
+          "Dann Luciano de Menezes"
+        ],
+        "classroom": "Sala 10",
+        "students": [
+          "Sistemas para Internet - 3° Período"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Dann Luciano de Menezes
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

@@ -1,0 +1,134 @@
+---
+slug: /professor/jessica_pinheiro_mendes_sampaio
+description: Jessica Pinheiro Mendes Sampaio
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Jessica Pinheiro Mendes Sampaio",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Análise Sensorial de Alimentos",
+        "size": 1,
+        "teachers": [
+          "Jessica Pinheiro Mendes Sampaio"
+        ],
+        "classroom": "Sala 21",
+        "students": [
+          "Tecnologia em Gastronomia - 3º Período (Tarde)"
+        ],
+        "time": "13:00 - 15:00",
+        "color": ""
+      },
+      {
+        "subject": "Higiene e Microbiologia dos Alimentos",
+        "size": 1,
+        "teachers": [
+          "Jessica Pinheiro Mendes Sampaio"
+        ],
+        "classroom": "Sala 14",
+        "students": [
+          "Tecnologia em Gastronomia - 1º Período (Noite)"
+        ],
+        "time": "21:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "TCC II",
+        "size": 1,
+        "teachers": [
+          "Jessica Pinheiro Mendes Sampaio"
+        ],
+        "classroom": "Laboratório de Artes",
+        "students": [
+          "Tecnologia em Gastronomia - 6º Período (Noite)"
+        ],
+        "time": "18:00 - 21:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Técnicas Dietéticas Aplicadas a Dietas Especiais",
+        "size": 1,
+        "teachers": [
+          "Jessica Pinheiro Mendes Sampaio"
+        ],
+        "classroom": "Sala 07",
+        "students": [
+          "Téc. Gastronomia (PROEJA) - 4º Período (Noite)"
+        ],
+        "time": "19:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Higiene e Microbiologia dos Alimentos",
+        "size": 1,
+        "teachers": [
+          "Jessica Pinheiro Mendes Sampaio"
+        ],
+        "classroom": "Sala 14",
+        "students": [
+          "Tecnologia em Gastronomia - 1º Período (Noite)"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      },
+      {
+        "subject": "Metodologia da Pesquisa",
+        "size": 1,
+        "teachers": [
+          "Jessica Pinheiro Mendes Sampaio"
+        ],
+        "classroom": "Sala 14",
+        "students": [
+          "Tecnologia em Gastronomia - 1º Período (Noite)"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Jessica Pinheiro Mendes Sampaio
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

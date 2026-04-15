@@ -1,0 +1,161 @@
+---
+slug: /professor/valdemi_nunes_costa
+description: Valdemi Nunes Costa
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Valdemi Nunes Costa",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Lógica Matemática",
+        "size": 1,
+        "teachers": [
+          "Valdemi Nunes Costa"
+        ],
+        "classroom": "Sala 22",
+        "students": [
+          "Lic. em Matemática - 1º Período (Tarde)"
+        ],
+        "time": "14:00 - 16:00",
+        "color": ""
+      },
+      {
+        "subject": "Cálculo de Funções de Mais de Uma Variável",
+        "size": 1,
+        "teachers": [
+          "Valdemi Nunes Costa"
+        ],
+        "classroom": "Laboratório de Matemática",
+        "students": [
+          "Lic. em Física - 3º Período (Tarde) M725"
+        ],
+        "time": "17:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Lógica Matemática",
+        "size": 1,
+        "teachers": [
+          "Valdemi Nunes Costa"
+        ],
+        "classroom": "Sala 22",
+        "students": [
+          "Lic. em Matemática - 1º Período (Tarde)"
+        ],
+        "time": "14:00 - 16:00",
+        "color": ""
+      },
+      {
+        "subject": "Matemática",
+        "size": 1,
+        "teachers": [
+          "Valdemi Nunes Costa"
+        ],
+        "classroom": "Sala 20",
+        "students": [
+          "Téc. em Informática (Integrado) - 3º INFO (Tarde)"
+        ],
+        "time": "16:00 - 17:00",
+        "color": ""
+      },
+      {
+        "subject": "Análise Real",
+        "size": 1,
+        "teachers": [
+          "Valdemi Nunes Costa"
+        ],
+        "classroom": "Indefinido",
+        "students": [
+          "Lic. em Matemática - 7º Período (Noite)",
+          "Lic. em Matemática - PPC 2016 (A)"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Cálculo de Funções de Mais de Uma Variável",
+        "size": 1,
+        "teachers": [
+          "Valdemi Nunes Costa"
+        ],
+        "classroom": "Laboratório de Matemática",
+        "students": [
+          "Lic. em Física - 3º Período (Tarde) M725"
+        ],
+        "time": "14:00 - 16:00",
+        "color": ""
+      },
+      {
+        "subject": "Matemática",
+        "size": 1,
+        "teachers": [
+          "Valdemi Nunes Costa"
+        ],
+        "classroom": "Sala 20",
+        "students": [
+          "Téc. em Informática (Integrado) - 3º INFO (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      },
+      {
+        "subject": "Análise Real",
+        "size": 1,
+        "teachers": [
+          "Valdemi Nunes Costa"
+        ],
+        "classroom": "Indefinido",
+        "students": [
+          "Lic. em Matemática - 7º Período (Noite)",
+          "Lic. em Matemática - PPC 2016 (A)"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Valdemi Nunes Costa
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

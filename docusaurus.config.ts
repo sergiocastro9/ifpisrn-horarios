@@ -69,6 +69,20 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          lastVersion: 'current',
+          versions: {
+            current: {
+              // Keep the default docs route (/docs/...) pointing to the current timetable.
+              // The version label is purely cosmetic for Docusaurus internal version UI.
+              label: (() => {
+                // eslint-disable-next-line @typescript-eslint/no-var-requires
+                const v = require('./src/data/siteVersions.json') as {
+                  current: SiteVersionRow;
+                };
+                return v.current.version;
+              })(),
+            },
+          },
         },
         theme: {
           customCss: './src/css/custom.css',

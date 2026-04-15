@@ -1,0 +1,79 @@
+---
+slug: /professor/camila_freitas_sarmento
+description: Camila Freitas Sarmento
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Camila Freitas Sarmento",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Projeto Integrador III",
+        "size": 1,
+        "teachers": [
+          "Camila Freitas Sarmento"
+        ],
+        "classroom": "Sala 19",
+        "students": [
+          "Téc. em Informática (Integrado) - 3º INFO (Manhã)"
+        ],
+        "time": "07:30 - 09:30",
+        "color": ""
+      },
+      {
+        "subject": "Projeto Integrador III",
+        "size": 1,
+        "teachers": [
+          "Camila Freitas Sarmento"
+        ],
+        "classroom": "Sala 20",
+        "students": [
+          "Téc. em Informática (Integrado) - 3º INFO (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Camila Freitas Sarmento
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

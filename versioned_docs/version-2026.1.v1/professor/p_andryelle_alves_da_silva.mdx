@@ -1,0 +1,134 @@
+---
+slug: /professor/andryelle_alves_da_silva
+description: Andryelle Alves da Silva
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Andryelle Alves da Silva",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Serviço de Sala e Bar",
+        "size": 1,
+        "teachers": [
+          "Andryelle Alves da Silva"
+        ],
+        "classroom": "Sala 08",
+        "students": [
+          "Téc. Gastronomia (PROEJA) - 5º Período (Noite)"
+        ],
+        "time": "19:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Harmonização de Bebidas",
+        "size": 1,
+        "teachers": [
+          "Andryelle Alves da Silva"
+        ],
+        "classroom": "Sala 21",
+        "students": [
+          "Tecnologia em Gastronomia - 3º Período (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      },
+      {
+        "subject": "Segurança do Trabalho",
+        "size": 1,
+        "teachers": [
+          "Andryelle Alves da Silva"
+        ],
+        "classroom": "Sala 14",
+        "students": [
+          "Tecnologia em Gastronomia - 1º Período (Noite)"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Serviços de Sala e Bar",
+        "size": 1,
+        "teachers": [
+          "Andryelle Alves da Silva"
+        ],
+        "classroom": "Sala 18",
+        "students": [
+          "Téc. em Eventos (Integrado) - 3º EVENTOS (Tarde)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Gestão de Unidades Produtoras de Refeições",
+        "size": 1,
+        "teachers": [
+          "Andryelle Alves da Silva"
+        ],
+        "classroom": "Laboratório de Artes",
+        "students": [
+          "Téc. Gastronomia - 2º Período (Tarde)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      },
+      {
+        "subject": "Serviço de Sala e Bar",
+        "size": 1,
+        "teachers": [
+          "Andryelle Alves da Silva"
+        ],
+        "classroom": "Laboratório de Artes",
+        "students": [
+          "Téc. Gastronomia - 2º Período (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Andryelle Alves da Silva
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

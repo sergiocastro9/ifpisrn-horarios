@@ -1,0 +1,67 @@
+---
+slug: /turma/tecnologia_em_gastronomia_5_periodo_noite
+description: Tecnologia em Gastronomia - 5º Período (Noite)
+sidebar_label: "5º Período (Noite)"
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Tecnologia em Gastronomia - 5º Período (Noite)",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "TCC I",
+        "size": 1,
+        "teachers": [
+          "Aquila Matheus de Souza Oliveira"
+        ],
+        "classroom": "Laboratório de Informática 3 (LAEPE)",
+        "students": [
+          "Tecnologia em Gastronomia - 5º Período (Noite)"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Tecnologia em Gastronomia - 5º Período (Noite)
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

@@ -1,0 +1,119 @@
+---
+slug: /professor/evanir_de_araujo_santos
+description: Evanir de Araujo Santos
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Evanir de Araujo Santos",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Panificação e Confeitaria",
+        "size": 1,
+        "teachers": [
+          "Evanir de Araujo Santos"
+        ],
+        "classroom": "Laboratório de Artes",
+        "students": [
+          "Téc. Gastronomia - 2º Período (Tarde)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      },
+      {
+        "subject": "Panificação e Confeitaria",
+        "size": 1,
+        "teachers": [
+          "Evanir de Araujo Santos"
+        ],
+        "classroom": "Laboratório de Artes",
+        "students": [
+          "Téc. Gastronomia - 2º Período (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      },
+      {
+        "subject": "Cozinha Internacional",
+        "size": 1,
+        "teachers": [
+          "Evanir de Araujo Santos"
+        ],
+        "classroom": "Sala 07",
+        "students": [
+          "Téc. Gastronomia (PROEJA) - 4º Período (Noite)"
+        ],
+        "time": "18:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Cozinha Internacional",
+        "size": 1,
+        "teachers": [
+          "Evanir de Araujo Santos"
+        ],
+        "classroom": "Laboratório de Artes",
+        "students": [
+          "Téc. Gastronomia - 2º Período (Tarde)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      },
+      {
+        "subject": "Cozinha Internacional",
+        "size": 1,
+        "teachers": [
+          "Evanir de Araujo Santos"
+        ],
+        "classroom": "Laboratório de Artes",
+        "students": [
+          "Téc. Gastronomia - 2º Período (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Evanir de Araujo Santos
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

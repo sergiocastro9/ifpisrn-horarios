@@ -1,0 +1,106 @@
+---
+slug: /professor/amaya_de_oliveira_santos
+description: Amaya de Oliveira Santos
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Amaya de Oliveira Santos",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Educação Especial e Inclusiva",
+        "size": 1,
+        "teachers": [
+          "Amaya de Oliveira Santos"
+        ],
+        "classroom": "Laboratório de Matemática",
+        "students": [
+          "Lic. em Física - 3º Período (Tarde) M725"
+        ],
+        "time": "14:00 - 16:00",
+        "color": ""
+      },
+      {
+        "subject": "Educação Especial e Inclusiva",
+        "size": 1,
+        "teachers": [
+          "Amaya de Oliveira Santos"
+        ],
+        "classroom": "Sala 18",
+        "students": [
+          "Lic. em Matemática - 5º Período (Noite)"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Educação Especial e Inclusiva",
+        "size": 1,
+        "teachers": [
+          "Amaya de Oliveira Santos"
+        ],
+        "classroom": "Laboratório de Matemática",
+        "students": [
+          "Lic. em Física - 3º Período (Tarde) M725"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      },
+      {
+        "subject": "Educação Especial e Inclusiva",
+        "size": 1,
+        "teachers": [
+          "Amaya de Oliveira Santos"
+        ],
+        "classroom": "Sala 18",
+        "students": [
+          "Lic. em Matemática - 5º Período (Noite)"
+        ],
+        "time": "18:00 - 20:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Amaya de Oliveira Santos
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

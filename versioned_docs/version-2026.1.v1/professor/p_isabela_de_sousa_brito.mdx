@@ -1,0 +1,146 @@
+---
+slug: /professor/isabela_de_sousa_brito
+description: Isabela de Sousa Brito
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Isabela de Sousa Brito",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Marketing Pessoal, Currículo e Oratória",
+        "size": 1,
+        "teachers": [
+          "Isabela de Sousa Brito"
+        ],
+        "classroom": "Sala 10",
+        "students": [
+          "Téc. em Administração (Integrado) - 2º ADM (Tarde)"
+        ],
+        "time": "07:30 - 09:30",
+        "color": ""
+      },
+      {
+        "subject": "Disciplina Complementar - Atendimento ao Cliente",
+        "size": 1,
+        "teachers": [
+          "Isabela de Sousa Brito"
+        ],
+        "classroom": "Sala 17",
+        "students": [
+          "Téc. em Administração (Integrado) - 3º ADM (Manhã)"
+        ],
+        "time": "10:00 - 12:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Gestão Administrativa em Eventos",
+        "size": 1,
+        "teachers": [
+          "Isabela de Sousa Brito"
+        ],
+        "classroom": "Sala 07",
+        "students": [
+          "Téc. em Eventos (Integrado) - 2º EVENTOS (Manhã)"
+        ],
+        "time": "07:30 - 09:30",
+        "color": ""
+      },
+      {
+        "subject": "Fundamentos e Noções de Mercado",
+        "size": 1,
+        "teachers": [
+          "Isabela de Sousa Brito"
+        ],
+        "classroom": "Sala 13",
+        "students": [
+          "Téc. em Administração (Integrado) - 1º ADM (Manhã)"
+        ],
+        "time": "11:00 - 12:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Teorias da Administração",
+        "size": 1,
+        "teachers": [
+          "Isabela de Sousa Brito"
+        ],
+        "classroom": "Sala 13",
+        "students": [
+          "Téc. em Administração (Integrado) - 1º ADM (Manhã)"
+        ],
+        "time": "07:30 - 09:30",
+        "color": ""
+      },
+      {
+        "subject": "Marketing Pessoal, Currículo e Oratória",
+        "size": 1,
+        "teachers": [
+          "Isabela de Sousa Brito"
+        ],
+        "classroom": "Sala 08",
+        "students": [
+          "Téc. em Administração (Integrado) - 2º ADM (Manhã)"
+        ],
+        "time": "10:00 - 12:00",
+        "color": ""
+      },
+      {
+        "subject": "Administração de Projetos e Gestão Estratégica",
+        "size": 1,
+        "teachers": [
+          "Isabela de Sousa Brito"
+        ],
+        "classroom": "Sala 07",
+        "students": [
+          "Téc. em Administração (Subsequente) - Módulo II (Tarde)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Isabela de Sousa Brito
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

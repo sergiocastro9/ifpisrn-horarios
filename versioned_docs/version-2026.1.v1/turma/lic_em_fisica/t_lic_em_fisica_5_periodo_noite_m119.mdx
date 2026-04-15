@@ -1,0 +1,67 @@
+---
+slug: /turma/lic_em_fisica_5_periodo_noite_m119
+description: Lic. em Física - 5º Período (Noite) M119
+sidebar_label: "5º Período (Noite) M119"
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Lic. em Física - 5º Período (Noite) M119",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": [
+      {
+        "subject": "Laboratório de Termodinâmica",
+        "size": 1,
+        "teachers": [
+          "Guilherme Severino Mendes de Araujo"
+        ],
+        "classroom": "Laboratório de Física",
+        "students": [
+          "Lic. em Física - 5º Período (Noite) M119"
+        ],
+        "time": "20:00 - 22:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Lic. em Física - 5º Período (Noite) M119
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

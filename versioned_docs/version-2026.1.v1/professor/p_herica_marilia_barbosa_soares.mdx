@@ -1,0 +1,132 @@
+---
+slug: /professor/herica_marilia_barbosa_soares
+description: Herica Marilia Barbosa Soares
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Herica Marilia Barbosa Soares",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Arte",
+        "size": 1,
+        "teachers": [
+          "Herica Marilia Barbosa Soares"
+        ],
+        "classroom": "Sala 08",
+        "students": [
+          "Téc. em Administração (Integrado) - 2º ADM (Manhã)"
+        ],
+        "time": "10:00 - 12:00",
+        "color": ""
+      },
+      {
+        "subject": "Arte e Criatividade",
+        "size": 1,
+        "teachers": [
+          "Herica Marilia Barbosa Soares"
+        ],
+        "classroom": "Sala 01",
+        "students": [
+          "Téc. em Eventos (Integrado) - 1º EVENTOS (Manhã)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Arte",
+        "size": 1,
+        "teachers": [
+          "Herica Marilia Barbosa Soares"
+        ],
+        "classroom": "Sala 10",
+        "students": [
+          "Téc. em Administração (Integrado) - 2º ADM (Tarde)"
+        ],
+        "time": "07:30 - 09:30",
+        "color": ""
+      },
+      {
+        "subject": "Arte e Criatividade",
+        "size": 1,
+        "teachers": [
+          "Herica Marilia Barbosa Soares"
+        ],
+        "classroom": "Sala 07",
+        "students": [
+          "Téc. em Eventos (Integrado) - 2º EVENTOS (Manhã)"
+        ],
+        "time": "11:00 - 12:00",
+        "color": ""
+      },
+      {
+        "subject": "Arte e Criatividade",
+        "size": 1,
+        "teachers": [
+          "Herica Marilia Barbosa Soares"
+        ],
+        "classroom": "Sala 15",
+        "students": [
+          "Téc. em Eventos (Integrado) - 1º EVENTOS (Tarde)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      },
+      {
+        "subject": "Arte",
+        "size": 1,
+        "teachers": [
+          "Herica Marilia Barbosa Soares"
+        ],
+        "classroom": "Sala 16",
+        "students": [
+          "Téc. em Informática (Integrado) - 2º INFO (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Herica Marilia Barbosa Soares
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

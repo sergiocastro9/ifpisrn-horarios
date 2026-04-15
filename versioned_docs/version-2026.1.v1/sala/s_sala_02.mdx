@@ -1,0 +1,80 @@
+---
+slug: /sala/sala_02
+description: Sala 02
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Sala 02",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": [
+      {
+        "subject": "Tópicos de Química",
+        "size": 1,
+        "teachers": [
+          "Lucimara Lais Zachow"
+        ],
+        "classroom": "Sala 02",
+        "students": [
+          "Lic. em Física - 7º Período (Tarde) M120"
+        ],
+        "time": "14:00 - 17:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Prática Profissional IV",
+        "size": 1,
+        "teachers": [
+          "Sérgio Augusto Dias Castro"
+        ],
+        "classroom": "Sala 02",
+        "students": [
+          "Lic. em Matemática - PPC 2016 (B)"
+        ],
+        "time": "15:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Sala 02
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

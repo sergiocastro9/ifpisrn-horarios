@@ -1,0 +1,159 @@
+---
+slug: /professor/ivan_rodrigues_de_moura
+description: Ivan Rodrigues de Moura
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Ivan Rodrigues de Moura",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Algoritmos e Lógica de Programação",
+        "size": 1,
+        "teachers": [
+          "Ivan Rodrigues de Moura"
+        ],
+        "classroom": "Sala 14",
+        "students": [
+          "Téc. em Informática (Integrado) - 1º INFO (Manhã)"
+        ],
+        "time": "10:00 - 11:00",
+        "color": ""
+      },
+      {
+        "subject": "Banco de Dados",
+        "size": 1,
+        "teachers": [
+          "Ivan Rodrigues de Moura"
+        ],
+        "classroom": "Sala 19",
+        "students": [
+          "Téc. em Informática (Integrado) - 3º INFO (Manhã)"
+        ],
+        "time": "11:00 - 12:00",
+        "color": ""
+      },
+      {
+        "subject": "Tecnologias Emergentes",
+        "size": 1,
+        "teachers": [
+          "Ivan Rodrigues de Moura"
+        ],
+        "classroom": "Sala 19",
+        "students": [
+          "Téc. em Informática (Integrado) - 3º INFO (Manhã)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      },
+      {
+        "subject": "Fundamentos de Redes e Internet",
+        "size": 1,
+        "teachers": [
+          "Ivan Rodrigues de Moura",
+          "Ricardo Valerio de Oliveira"
+        ],
+        "classroom": "Sala 14",
+        "students": [
+          "Téc. em Informática (Integrado) - 1º INFO (Manhã)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Algoritmos e Lógica de Programação",
+        "size": 1,
+        "teachers": [
+          "Ivan Rodrigues de Moura"
+        ],
+        "classroom": "Sala 14",
+        "students": [
+          "Téc. em Informática (Integrado) - 1º INFO (Manhã)"
+        ],
+        "time": "07:30 - 09:30",
+        "color": ""
+      },
+      {
+        "subject": "Banco de Dados",
+        "size": 1,
+        "teachers": [
+          "Ivan Rodrigues de Moura"
+        ],
+        "classroom": "Sala 19",
+        "students": [
+          "Téc. em Informática (Integrado) - 3º INFO (Manhã)"
+        ],
+        "time": "10:00 - 12:00",
+        "color": ""
+      },
+      {
+        "subject": "Tecnologias Emergentes",
+        "size": 1,
+        "teachers": [
+          "Ivan Rodrigues de Moura"
+        ],
+        "classroom": "Sala 20",
+        "students": [
+          "Téc. em Informática (Integrado) - 3º INFO (Tarde)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      },
+      {
+        "subject": "Banco de Dados",
+        "size": 1,
+        "teachers": [
+          "Ivan Rodrigues de Moura"
+        ],
+        "classroom": "Sala 19",
+        "students": [
+          "Téc. em Informática (Integrado) - 3º INFO (Manhã)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Ivan Rodrigues de Moura
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>

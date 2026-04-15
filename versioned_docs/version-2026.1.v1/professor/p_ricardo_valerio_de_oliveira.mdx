@@ -1,0 +1,111 @@
+---
+slug: /professor/ricardo_valerio_de_oliveira
+description: Ricardo Valerio de Oliveira
+---
+import { Grid } from "@site/src/components/Grid";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export const data = {
+  title: "Ricardo Valerio de Oliveira",
+  base: "",
+  weekClasses: [
+  {
+    "dayName": "Segunda-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Terça-Feira",
+    "dayClasses": []
+  },
+  {
+    "dayName": "Quarta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Fundamentos de Redes e Internet",
+        "size": 1,
+        "teachers": [
+          "Ivan Rodrigues de Moura",
+          "Ricardo Valerio de Oliveira"
+        ],
+        "classroom": "Sala 14",
+        "students": [
+          "Téc. em Informática (Integrado) - 1º INFO (Manhã)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Quinta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Infraestrutura Computacional e Suporte Técnico",
+        "size": 1,
+        "teachers": [
+          "Diego Cordeiro de Oliveira",
+          "Ricardo Valerio de Oliveira"
+        ],
+        "classroom": "Sala 14",
+        "students": [
+          "Téc. em Informática (Integrado) - 1º INFO (Manhã)"
+        ],
+        "time": "07:30 - 09:30",
+        "color": ""
+      },
+      {
+        "subject": "Desenvolvimento Web Front-End",
+        "size": 1,
+        "teachers": [
+          "Alexandre Ribeiro Cajazeira Ramos",
+          "Ricardo Valerio de Oliveira"
+        ],
+        "classroom": "Sala 14",
+        "students": [
+          "Téc. em Informática (Integrado) - 1º INFO (Manhã)"
+        ],
+        "time": "13:30 - 15:30",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sexta-Feira",
+    "dayClasses": [
+      {
+        "subject": "Robótica",
+        "size": 1,
+        "teachers": [
+          "Diego Cordeiro de Oliveira",
+          "Ricardo Valerio de Oliveira"
+        ],
+        "classroom": "Sala 16",
+        "students": [
+          "Téc. em Informática (Integrado) - 2º INFO (Tarde)"
+        ],
+        "time": "16:00 - 18:00",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "dayName": "Sábado",
+    "dayClasses": []
+  }
+],
+  alert: ""
+}
+
+# Ricardo Valerio de Oliveira
+
+<div>
+  {
+    <BrowserOnly>
+      {() => (
+        <Grid
+          title={data.title}
+          weekClasses={data.weekClasses}
+        />
+      )}
+    </BrowserOnly>
+  }
+</div>
