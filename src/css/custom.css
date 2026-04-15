@@ -124,7 +124,8 @@ body {
 .theme-doc-sidebar-container nav.menu.thin-scrollbar {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  /* Use viewport units so the menu has a real height to flex against */
+  height: calc(100vh - var(--ifm-navbar-height));
 }
 
 .theme-doc-sidebar-container nav.menu.thin-scrollbar > ul.menu__list {
@@ -138,7 +139,7 @@ body {
 .navbar-sidebar nav.menu.thin-scrollbar {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: calc(100vh - var(--ifm-navbar-height));
 }
 
 .navbar-sidebar nav.menu.thin-scrollbar > ul.menu__list {
