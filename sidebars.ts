@@ -48,6 +48,69 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
+
+    {
+      type: 'html',
+      value: '<div class="sidebarSectionTitle">INFORMAÇÕES DO CAMPUS</div>',
+      defaultStyle: true,
+    },
+    'campus/administracao',
+    {
+      type: 'category',
+      label: 'Cursos',
+      collapsible: true,
+      collapsed: true,
+      items: [
+        {
+          type: 'html',
+          value: '<div class="sidebarSectionHeading">TÉCNICOS</div>',
+          defaultStyle: true,
+        },
+        'cursos/tecnico-administracao-integrado',
+        'cursos/tecnico-eventos-integrado',
+        'cursos/tecnico-informatica-integrado',
+        'cursos/tecnico-administracao-subsequente',
+        'cursos/tecnico-gastronomia-subsequente',
+        'cursos/tecnico-guia-de-turismo-subsequente',
+        {
+          type: 'html',
+          value: '<div class="sidebarSectionHeading">LICENCIATURA</div>',
+          defaultStyle: true,
+        },
+        'cursos/licenciatura-fisica',
+        'cursos/licenciatura-matematica',
+        {
+          type: 'html',
+          value: '<div class="sidebarSectionHeading">TECNOLOGIA</div>',
+          defaultStyle: true,
+        },
+        'cursos/tecnologia-gastronomia',
+        'cursos/tecnologia-sistemas-para-internet',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Contato',
+      collapsible: true,
+      collapsed: true,
+      items: [
+        {
+          type: 'link',
+          label: 'Email',
+          href: '/docs/campus/contato#email',
+        },
+        {
+          type: 'link',
+          label: 'Telefone',
+          href: '/docs/campus/contato#telefone',
+        },
+        {
+          type: 'link',
+          label: 'Endereço',
+          href: '/docs/campus/contato#endereco',
+        },
+      ],
+    },
     // 'hello',
     // {
     //   type: 'category',

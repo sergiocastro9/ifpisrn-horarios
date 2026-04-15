@@ -99,3 +99,23 @@ body {
     gap: 1.5rem;
   }
 }
+
+/* Sidebar section headings (static group labels like TÉCNICOS/LICENCIATURA/TECNOLOGIA) */
+.sidebarSectionTitle {
+  margin: 1rem 0 0.25rem;
+  padding: 0.25rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.sidebarSectionHeading {
+  padding: 0.5rem 1rem 0.25rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
