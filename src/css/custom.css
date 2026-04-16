@@ -161,7 +161,7 @@ body {
   min-height: 1rem;
 }
 
-/* Schedule items (Turma/Professor/Sala dropdown only) with icons (avoid applying to each item) */
+/* Schedule items (Home/Turma/Professor/Sala) with icons (avoid applying to each item) */
 .scheduleItem > .menu__list-item-collapsible > a.menu__link--sublist {
   display: flex;
   align-items: center;
@@ -178,15 +178,13 @@ body {
   background-size: 20px 20px;
 }
 
-.theme-doc-sidebar-menu a.menu__link[href$="/docs/intro"],
-.theme-doc-sidebar-menu a.menu__link[href$="/docs/intro/"] {
+.scheduleItem--home > a.menu__link {
   display: flex;
   align-items: center;
   gap: 0.65rem;
 }
 
-.theme-doc-sidebar-menu a.menu__link[href$="/docs/intro"]::before,
-.theme-doc-sidebar-menu a.menu__link[href$="/docs/intro/"]::before {
+.scheduleItem--home > a.menu__link::before {
   content: "";
   width: 20px;
   height: 20px;
