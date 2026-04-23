@@ -1,0 +1,25 @@
+.currentLink,
+.currentLink:visited {
+  color: #1b8f3a;
+  font-weight: 600;
+}
+
+.pastLink,
+.pastLink:visited {
+  color: #cc4b4b;
+}
+
+.currentLink:hover,
+.pastLink:hover {
+  text-decoration: underline;
+}
+
+html[data-theme='dark'] .currentLink,
+html[data-theme='dark'] .currentLink:visited {
+  color: #39d98a;
+}
+
+html[data-theme='dark'] .pastLink,
+html[data-theme='dark'] .pastLink:visited {
+  color: #ff7a7a;
+}

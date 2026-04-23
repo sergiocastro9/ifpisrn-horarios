@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from '@docusaurus/Link'
+import styles from './VersionsHistoryTable.module.css'
 
 type VersionRow = {
   id: string
@@ -47,7 +48,11 @@ export default function VersionsHistoryTable() {
           return (
             <tr key={`${row.id}-${row.version}`}>
               <td>
-                {isCurrent ? row.version : <Link to={to}>{row.version}</Link>}
+                <Link
+                  to={to}
+                  className={isCurrent ? styles.currentLink : styles.pastLink}>
+                  {row.version}
+                </Link>
               </td>
               <td style={{ textAlign: 'center' }}>{start}</td>
               <td style={{ textAlign: 'center' }}>{end}</td>
@@ -58,4 +63,3 @@ export default function VersionsHistoryTable() {
     </table>
   )
 }
-
