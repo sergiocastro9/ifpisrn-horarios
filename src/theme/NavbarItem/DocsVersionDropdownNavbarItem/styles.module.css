@@ -1,0 +1,41 @@
+.versionsButton {
+  cursor: pointer;
+}
+
+.semesterMenu {
+  min-width: 9rem;
+}
+
+.semesterItem {
+  position: relative;
+}
+
+.semesterLabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  cursor: default;
+}
+
+.semesterLabel::after {
+  content: '›';
+  opacity: 0.7;
+}
+
+.versionSubmenu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  display: none;
+  margin-left: 0.25rem;
+  min-width: 14rem;
+  max-height: 70vh;
+  overflow: auto;
+}
+
+.semesterItem:hover .versionSubmenu,
+.semesterItem:focus-within .versionSubmenu {
+  display: block;
+}
+
