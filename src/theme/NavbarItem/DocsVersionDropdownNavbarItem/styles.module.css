@@ -4,10 +4,12 @@
 
 .semesterMenu {
   min-width: 9rem;
+  overflow: visible;
 }
 
 .semesterItem {
   position: relative;
+  overflow: visible;
 }
 
 .semesterLabel {
@@ -30,9 +32,13 @@
   top: 0;
   display: none;
   margin-left: 0;
-  min-width: 14rem;
+  min-width: 16rem;
   max-height: 70vh;
   overflow: auto;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  pointer-events: all !important;
 }
 
 .semesterItem:hover .versionSubmenu,
