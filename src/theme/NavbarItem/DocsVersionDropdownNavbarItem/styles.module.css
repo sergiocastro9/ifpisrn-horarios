@@ -3,13 +3,15 @@
 }
 
 .semesterMenu {
-  min-width: 9rem;
-  overflow: visible;
+  min-width: 10rem;
+  /* Prevent the outer menu from becoming a tiny scrollable container */
+  max-height: none !important;
+  overflow: visible !important;
 }
 
 .semesterItem {
   position: relative;
-  overflow: visible;
+  overflow: visible !important;
 }
 
 .semesterLabel {
@@ -32,16 +34,25 @@
   top: 0;
   display: none;
   margin-left: 0;
-  min-width: 16rem;
+  min-width: 18rem;
+  width: max-content;
+  max-width: min(26rem, 90vw);
   max-height: 70vh;
   overflow: auto;
   opacity: 1 !important;
   visibility: visible !important;
   transform: none !important;
   pointer-events: all !important;
+  white-space: nowrap;
 }
 
 .semesterItem:hover .versionSubmenu,
 .semesterItem:focus-within .versionSubmenu {
   display: block;
+}
+
+/* If the main dropdown is aligned to the right, open the nested submenu to the left */
+:global(.dropdown--right) .semesterItem .versionSubmenu {
+  left: auto;
+  right: calc(100% - 0.5rem);
 }
