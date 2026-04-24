@@ -93,6 +93,12 @@ function buildCampusSidebarItems() {
       className: 'campusInfoItem campusInfoItem--saude',
     },
     {
+      type: 'link',
+      label: 'Calendário Acadêmico',
+      href: '/docs/campus/calendario-academico',
+      className: 'campusInfoItem campusInfoItem--calendario',
+    },
+    {
       type: 'category',
       label: 'Cursos',
       collapsible: true,

@@ -67,6 +67,12 @@ const sidebars: SidebarsConfig = {
       className: 'campusInfoItem campusInfoItem--saude',
     },
     {
+      type: 'doc',
+      id: 'campus/calendario-academico',
+      label: 'Calendário Acadêmico',
+      className: 'campusInfoItem campusInfoItem--calendario',
+    },
+    {
       type: 'category',
       label: 'Cursos',
       collapsible: true,
@@ -143,4 +149,3 @@ const sidebars: SidebarsConfig = {
 };
 
 export default sidebars;
-
